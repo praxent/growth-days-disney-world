@@ -1,43 +1,25 @@
-import { useState } from 'react'
-import logo from './logo.svg'
+import disneyWorld from './disney-world.jpg'
 import './App.css'
+import {Route} from "react-router";
+import {Link} from "react-router-dom";
+import {AnimalKingdom} from "animal-kingdom/AnimalKingdom";
+import {BlizzardBeach} from "blizzard-beach/BlizzardBeach";
+import {Epcot} from "epcot/Epcot";
+import {MagicKingdom} from "magic-kingdom/MagicKingdom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div class="app">
+      <img src={disneyWorld} className="disney-world"/>
+      <Link to={"/magic-kingdom"}><span className="label magic-kingdom">Magic Kingdom</span></Link>
+      <Link to={"/blizzard-beach"}><span className="label blizzard-beach">Blizzard Beach</span></Link>
+      <Link to={"/animal-kingdom"}><span className="label animal-kingdom">Animal Kingdom</span></Link>
+      <Link to={"/epcot"}><span className="label epcot">Epcot</span></Link>
+
+      <Route path={"/animal-kingdom"} component={AnimalKingdom} />
+      <Route path={"/blizzard-beach"} component={BlizzardBeach} />
+      <Route path={"/epcot"} component={Epcot} />
+      <Route path={"/magic-kingdom"} component={MagicKingdom}/>
     </div>
   )
 }
