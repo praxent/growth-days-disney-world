@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-export const Styles = styled.div`
+const Styles = styled.div`
   color: red;
 `;
 
