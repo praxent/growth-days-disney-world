@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path={"/"} element={<DisneyWorld/>}/>
+        <Route path={"/"} element={<DisneyWorld/>}/>
         <Route path={"/animal-kingdom"} element={<AnimalKingdom/>}/>
         <Route path={"/blizzard-beach"} element={<BlizzardBeach/>}/>
         <Route path={"/epcot"} element={<Epcot/>}/>

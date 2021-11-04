@@ -1,8 +1,8 @@
 function Epcot() {
   return (
-    <div>
+    <>
       Hello from Epcot
-    </div>
+    </>
   )
 }
 
