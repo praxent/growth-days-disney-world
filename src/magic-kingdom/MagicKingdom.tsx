@@ -1,5 +1,5 @@
 import React from 'react';
-import magicKingdom from "../images/magic-kingdom.jpg";
+import magicKingdom from "../images/magic-kingdom.jpeg";
 import {Link} from "react-router-dom";
 
 function MagicKingdom() {

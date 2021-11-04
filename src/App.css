@@ -40,10 +40,6 @@ html, body, #root, .park {
   background: rgb(160, 186, 125);
 }
 
-.park.magic-kingdom {
-  background: rgb(105, 175, 79);
-}
-
 .map-container {
   position: relative;
   height: 900px;
