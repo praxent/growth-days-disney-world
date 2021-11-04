@@ -3,7 +3,7 @@ import React from 'react';
 function Activity2() {
   return (
     <>
-      Hello from Activity 2 Epcot
+      Hello from Activity 2 Animal Kingdom
     </>
   )
 }
