@@ -28,7 +28,7 @@ html, body, #root, .app {
 }
 
 .label {
-  position: relative;
+  position: absolute;
   z-index: 2;
   padding: 10px 15px;
   background: rgb(23 60 103);
@@ -41,12 +41,13 @@ html, body, #root, .app {
 }
 
 .label:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .label.magic-kingdom {
-  left: 472px;
-  top: 50px;
+  left: 465px;
+  top: 35px;
+  padding: 10px 25px;
 }
 
 .label.blizzard-beach {
@@ -56,14 +57,14 @@ html, body, #root, .app {
 }
 
 .label.animal-kingdom {
-  left: -335px;
-  top: 483px;
+  left: 44px;
+  top: 470px;
   padding: 10px 70px;
 }
 
 .label.epcot {
-  left: 100px;
-  top: 490px;
+  left: 730px;
+  top: 480px;
 }
 
 @keyframes pulse {
