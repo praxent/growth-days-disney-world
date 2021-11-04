@@ -1,3 +1,4 @@
+import React from 'react';
 import blizzardBeach from "../images/blizzard-beach.jpg";
 
 function BlizzardBeach() {

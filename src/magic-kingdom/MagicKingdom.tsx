@@ -1,3 +1,4 @@
+import React from 'react';
 import magicKingdom from "../images/magic-kingdom.jpg";
 
 function MagicKingdom() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import animalKingdom from "../images/animal-kingdom.jpg";
 
 function AnimalKingdom() {
