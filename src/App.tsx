@@ -1,31 +1,35 @@
 import './App.css'
-import {Route, Routes} from "react-router-dom";
-import AnimalKingdom from "./animal-kingdom/AnimalKingdom";
-import BlizzardBeach from "./blizzard-beach/BlizzardBeach";
-import Epcot from "./epcot/Epcot";
-import MagicKingdom from "./magic-kingdom/MagicKingdom";
-import DisneyWorld from "./disney-world/DisneyWorld";
 import * as React from "react";
+import {Route, Routes} from "react-router-dom";
 
+import Instructions from "./Instructions";
+import DisneyWorld from "./disney-world/DisneyWorld";
+
+import AnimalKingdom from "./animal-kingdom/AnimalKingdom";
 import {default as AnimalKingdomActivity1} from "./animal-kingdom/activity1/Activity1";
 import {default as AnimalKingdomActivity2} from "./animal-kingdom/activity2/Activity2";
 import {default as AnimalKingdomActivity3} from "./animal-kingdom/activity3/Activity3";
 
+import BlizzardBeach from "./blizzard-beach/BlizzardBeach";
 import {default as BlizzardBeachActivity1} from "./blizzard-beach/activity1/Activity1";
 import {default as BlizzardBeachActivity2} from "./blizzard-beach/activity2/Activity2";
 import {default as BlizzardBeachActivity3} from "./blizzard-beach/activity3/Activity3";
 
+import Epcot from "./epcot/Epcot";
 import {default as EpcotActivity1} from "./epcot/activity1/Activity1";
 import {default as EpcotActivity2} from "./epcot/activity2/Activity2";
 import {default as EpcotActivity3} from "./epcot/activity3/Activity3";
 
+import MagicKingdom from "./magic-kingdom/MagicKingdom";
 import {default as MagicKingdomActivity1} from "./magic-kingdom/activity1/Activity1";
 import {default as MagicKingdomActivity2} from "./magic-kingdom/activity2/Activity2";
 import {default as MagicKingdomActivity3} from "./magic-kingdom/activity3/Activity3";
 
 function App() {
+
   return (
     <>
+      <Instructions />
       <Routes>
         <Route path={"/"} element={<DisneyWorld/>}/>
 
