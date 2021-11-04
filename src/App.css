@@ -22,9 +22,10 @@ html, body, #root, .app {
   box-sizing: border-box;
 }
 
-.disney-world {
+.map {
   position: absolute;
   z-index: 1;
+  height: 100%;
 }
 
 .label {

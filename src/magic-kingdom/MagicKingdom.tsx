@@ -1,7 +1,9 @@
+import magicKingdom from "../images/magic-kingdom.jpg";
+
 function MagicKingdom() {
   return (
     <>
-      Hello from Magic Kingdom
+      <img src={magicKingdom} className="map"/>
     </>
   )
 }

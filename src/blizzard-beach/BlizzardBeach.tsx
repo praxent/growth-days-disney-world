@@ -1,7 +1,9 @@
+import blizzardBeach from "../images/blizzard-beach.jpg";
+
 function BlizzardBeach() {
   return (
     <>
-      Hello from Blizzard Beach
+      <img src={blizzardBeach} className="map"/>
     </>
   )
 }

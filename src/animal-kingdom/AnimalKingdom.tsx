@@ -1,7 +1,9 @@
+import animalKingdom from "../images/animal-kingdom.jpg";
+
 function AnimalKingdom() {
   return (
     <>
-      Hello from Animal Kingdom
+      <img src={animalKingdom} className="map"/>
     </>
   )
 }
