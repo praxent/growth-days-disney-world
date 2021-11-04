@@ -3,27 +3,27 @@ import * as React from "react";
 import {Route, Routes} from "react-router-dom";
 
 import Instructions from "./Instructions";
-import DisneyWorld from "./disney-world/DisneyWorld";
+import DisneyWorld from "./DisneyWorld";
 
-import AnimalKingdom from "./animal-kingdom/AnimalKingdom";
-import {default as AnimalKingdomActivity1} from "./animal-kingdom/activity1/Activity1";
-import {default as AnimalKingdomActivity2} from "./animal-kingdom/activity2/Activity2";
-import {default as AnimalKingdomActivity3} from "./animal-kingdom/activity3/Activity3";
+import AnimalKingdom from ".//AnimalKingdom";
+import {default as AnimalKingdomActivity1} from "../src/animal-kingdom/activity1/Activity1";
+import {default as AnimalKingdomActivity2} from "../src/animal-kingdom/activity2/Activity2";
+import {default as AnimalKingdomActivity3} from "../src/animal-kingdom/activity3/Activity3";
 
-import BlizzardBeach from "./blizzard-beach/BlizzardBeach";
-import {default as BlizzardBeachActivity1} from "./blizzard-beach/activity1/Activity1";
-import {default as BlizzardBeachActivity2} from "./blizzard-beach/activity2/Activity2";
-import {default as BlizzardBeachActivity3} from "./blizzard-beach/activity3/Activity3";
+import BlizzardBeach from ".//BlizzardBeach";
+import {default as BlizzardBeachActivity1} from "../src/blizzard-beach/activity1/Activity1";
+import {default as BlizzardBeachActivity2} from "../src/blizzard-beach/activity2/Activity2";
+import {default as BlizzardBeachActivity3} from "../src/blizzard-beach/activity3/Activity3";
 
-import Epcot from "./epcot/Epcot";
-import {default as EpcotActivity1} from "./epcot/activity1/Activity1";
-import {default as EpcotActivity2} from "./epcot/activity2/Activity2";
-import {default as EpcotActivity3} from "./epcot/activity3/Activity3";
+import Epcot from ".//Epcot";
+import {default as EpcotActivity1} from "../src/epcot/activity1/Activity1";
+import {default as EpcotActivity2} from "../src/epcot/activity2/Activity2";
+import {default as EpcotActivity3} from "../src/epcot/activity3/Activity3";
 
-import MagicKingdom from "./magic-kingdom/MagicKingdom";
-import {default as MagicKingdomActivity1} from "./magic-kingdom/activity1/Activity1";
-import {default as MagicKingdomActivity2} from "./magic-kingdom/activity2/Activity2";
-import {default as MagicKingdomActivity3} from "./magic-kingdom/activity3/Activity3";
+import MagicKingdom from ".//MagicKingdom";
+import {default as MagicKingdomActivity1} from "../src/magic-kingdom/activity1/Activity1";
+import {default as MagicKingdomActivity2} from "../src/magic-kingdom/activity2/Activity2";
+import {default as MagicKingdomActivity3} from "../src/magic-kingdom/activity3/Activity3";
 
 function App() {
 

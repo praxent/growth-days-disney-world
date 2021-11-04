@@ -1,5 +1,5 @@
 import React from 'react';
-import epcot from "../images/epcot.gif";
+import epcot from "./images/epcot.gif";
 import {Link} from "react-router-dom";
 
 function Epcot() {

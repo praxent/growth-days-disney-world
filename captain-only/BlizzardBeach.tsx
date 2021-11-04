@@ -1,5 +1,5 @@
 import React from 'react';
-import blizzardBeach from "../images/blizzard-beach.jpg";
+import blizzardBeach from "./images/blizzard-beach.jpg";
 import {Link} from "react-router-dom";
 
 function BlizzardBeach() {

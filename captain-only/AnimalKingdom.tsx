@@ -1,5 +1,5 @@
 import React from 'react';
-import animalKingdom from "../images/animal-kingdom.jpg";
+import animalKingdom from "./images/animal-kingdom.jpg";
 import {Link} from "react-router-dom";
 
 function AnimalKingdom() {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import disneyWorld from "../images/disney-world.jpg";
+import disneyWorld from "./images/disney-world.jpg";
 import {Link} from "react-router-dom";
 
 function DisneyWorld() {
