@@ -13,29 +13,29 @@ function Instructions() {
       </button>
 
       {showHelp &&
-        <div className="instructions">
-          <h2>Instructions</h2>
-          {pathname === "/animal-kingdom/activity1" &&
-            <ul>
-              <li>Requirement 1</li>
-              <li>Requirement 2</li>
-              <li>Requirement 3</li>
-            </ul>
-          }
-        </div>
-      }
+        <>
+          <div className="instructions">
+            <h2>Instructions</h2>
+            {pathname === "/animal-kingdom/activity1" &&
+              <ul>
+                <li>Requirement 1</li>
+                <li>Requirement 2</li>
+                <li>Requirement 3</li>
+              </ul>
+            }
+          </div>
 
-      {showHelp &&
-        <div className="spotlight">
-          <h2>Feature Spotlight</h2>
-          {pathname === "/animal-kingdom/activity1" &&
-            <ul>
-              <li>Effect Hooks</li>
-              <li>Higher Order Component</li>
-              <li>Inter-Component Communication</li>
-            </ul>
-          }
-        </div>
+          <div className="spotlight">
+            <h2>Feature Spotlight</h2>
+            {pathname === "/animal-kingdom/activity1" &&
+              <ul>
+                <li>Effect Hooks</li>
+                <li>Higher Order Component</li>
+                <li>Inter-Component Communication</li>
+              </ul>
+            }
+          </div>
+        </>
       }
     </>
   )
