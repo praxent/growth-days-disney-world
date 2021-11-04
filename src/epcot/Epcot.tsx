@@ -3,8 +3,12 @@ import epcot from "../images/epcot.gif";
 
 function Epcot() {
   return (
-    <div className="app epcot">
-      <img src={epcot} className="map"/>
+    <div className="park epcot flex-column">
+      <div className="flex-row">
+        <div className="map-container">
+          <img src={epcot} className="map" height="900"/>
+        </div>
+      </div>
     </div>
   )
 }

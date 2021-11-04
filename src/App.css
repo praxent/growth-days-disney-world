@@ -13,7 +13,8 @@
   }
 }
 
-html, body, #root, .app {
+html, body, #root, .park {
+  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -21,24 +22,40 @@ html, body, #root, .app {
   box-sizing: border-box;
 }
 
-.app {
+.flex-row {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
 }
 
-.map {
-  position: absolute;
-  z-index: 1;
-  height: 900px;
+.flex-column {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.disney-world {
+.park.disney-world {
   background: rgb(160, 186, 125);
 }
 
-.magic-kingdom {
+.park.magic-kingdom {
   background: rgb(105, 175, 79);
+}
+
+.map-container {
+  position: relative;
+  height: 900px;
+}
+
+.map {
+  position: relative;
+  height: 100%;
+}
+
+.labels {
+  position: absolute;
 }
 
 .label {
@@ -55,26 +72,26 @@ html, body, #root, .app {
 }
 
 .label.magic-kingdom {
-  left: 125px;
-  top: 35px;
+  left: 410px;
+  top: -870px;
   padding: 10px 25px;
 }
 
 .label.blizzard-beach {
-  left: -160px;
-  top: 615px;
+  left: 120px;
+  top: -290px;
   padding: 10px 65px;
 }
 
 .label.animal-kingdom {
-  left: -650px;
-  top: 440px;
+  left: -370px;
+  top: -465px;
   padding: 10px 70px;
 }
 
 .label.epcot {
-  left: -280px;
-  top: 445px;
+  left: 0px;
+  top: -460px;
 }
 
 @keyframes pulse {
