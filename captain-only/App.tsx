@@ -4,6 +4,7 @@ import {Route, Routes} from "react-router-dom";
 
 import Instructions from "./Instructions";
 import DisneyWorld from "./DisneyWorld";
+import {CONFIG} from "./config";
 
 import AnimalKingdom from ".//AnimalKingdom";
 import {default as AnimalKingdomActivity1} from "../src/animal-kingdom/activity1/Activity1";
@@ -31,29 +32,29 @@ function App() {
     <>
       <Instructions />
       <Routes>
-        <Route path={"/"} element={<DisneyWorld/>}/>
+        <Route path={CONFIG.ROUTE.ROOT} element={<DisneyWorld/>}/>
 
-        <Route path={"/animal-kingdom"} element={<AnimalKingdom/>}/>
-        <Route path={"/animal-kingdom/activity1"} element={<AnimalKingdomActivity1/>}/>
-        <Route path={"/animal-kingdom/activity2"} element={<AnimalKingdomActivity2/>}/>
-        <Route path={"/animal-kingdom/activity3"} element={<AnimalKingdomActivity3/>}/>
+        <Route path={CONFIG.ROUTE.ANIMAL_KINGDOM} element={<AnimalKingdom/>}/>
+        <Route path={CONFIG.ROUTE.ANIMAL_KINGDOM_A1} element={<AnimalKingdomActivity1/>}/>
+        <Route path={CONFIG.ROUTE.ANIMAL_KINGDOM_A2} element={<AnimalKingdomActivity2/>}/>
+        <Route path={CONFIG.ROUTE.ANIMAL_KINGDOM_A3} element={<AnimalKingdomActivity3/>}/>
 
-        <Route path={"/blizzard-beach"} element={<BlizzardBeach/>}/>
-        <Route path={"/blizzard-beach/activity1"} element={<BlizzardBeachActivity1/>}/>
-        <Route path={"/blizzard-beach/activity2"} element={<BlizzardBeachActivity2/>}/>
-        <Route path={"/blizzard-beach/activity3"} element={<BlizzardBeachActivity3/>}/>
+        <Route path={CONFIG.ROUTE.BLIZZARD_BEACH} element={<BlizzardBeach/>}/>
+        <Route path={CONFIG.ROUTE.BLIZZARD_BEACH_A1} element={<BlizzardBeachActivity1/>}/>
+        <Route path={CONFIG.ROUTE.BLIZZARD_BEACH_A2} element={<BlizzardBeachActivity2/>}/>
+        <Route path={CONFIG.ROUTE.BLIZZARD_BEACH_A3} element={<BlizzardBeachActivity3/>}/>
 
-        <Route path={"/epcot"} element={<Epcot/>}/>
-        <Route path={"/epcot/activity1"} element={<EpcotActivity1/>}/>
-        <Route path={"/epcot/activity2"} element={<EpcotActivity2/>}/>
-        <Route path={"/epcot/activity3"} element={<EpcotActivity3/>}/>
+        <Route path={CONFIG.ROUTE.EPCOT} element={<Epcot/>}/>
+        <Route path={CONFIG.ROUTE.EPCOT_A1} element={<EpcotActivity1/>}/>
+        <Route path={CONFIG.ROUTE.EPCOT_A2} element={<EpcotActivity2/>}/>
+        <Route path={CONFIG.ROUTE.EPCOT_A3} element={<EpcotActivity3/>}/>
 
-        <Route path={"/magic-kingdom"} element={<MagicKingdom/>}/>
-        <Route path={"/magic-kingdom/activity1"} element={<MagicKingdomActivity1/>}/>
-        <Route path={"/magic-kingdom/activity2"} element={<MagicKingdomActivity2/>}/>
-        <Route path={"/magic-kingdom/activity3"} element={<MagicKingdomActivity3/>}/>
+        <Route path={CONFIG.ROUTE.MAGIC_KINGDOM} element={<MagicKingdom/>}/>
+        <Route path={CONFIG.ROUTE.MAGIC_KINGDOM_A1} element={<MagicKingdomActivity1/>}/>
+        <Route path={CONFIG.ROUTE.MAGIC_KINGDOM_A2} element={<MagicKingdomActivity2/>}/>
+        <Route path={CONFIG.ROUTE.MAGIC_KINGDOM_A3} element={<MagicKingdomActivity3/>}/>
 
-        <Route path="*" element={<DisneyWorld/>}/>
+        <Route path={CONFIG.ROUTE.ANY} element={<DisneyWorld/>}/>
       </Routes>
     </>
   )

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useLocation} from "react-router-dom";
 import styled from "styled-components";
-import {JSXElementConstructor} from "react";
+import {CONFIG} from "./config";
 
 const Styles = styled.div`
   .display-help {
@@ -56,10 +56,10 @@ function Instructions() {
   )
 }
 
-function renderHelpDetails(pathname : string) : JSXElementConstructor {
-  let helpDetails : JSXElementConstructor;
+function renderHelpDetails(pathname : string) {
+  let helpDetails;
   switch (pathname) {
-    case "/animal-kingdom/activity1":
+    case CONFIG.ROUTE.ANIMAL_KINGDOM_A1:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -77,7 +77,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/animal-kingdom/activity2":
+    case CONFIG.ROUTE.ANIMAL_KINGDOM_A2:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -91,7 +91,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/animal-kingdom/activity3":
+    case CONFIG.ROUTE.ANIMAL_KINGDOM_A3:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -105,7 +105,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/blizzard-beach/activity1":
+    case CONFIG.ROUTE.BLIZZARD_BEACH_A1:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -119,7 +119,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/blizzard-beach/activity2":
+    case CONFIG.ROUTE.BLIZZARD_BEACH_A2:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -133,7 +133,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/blizzard-beach/activity3":
+    case CONFIG.ROUTE.BLIZZARD_BEACH_A3:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -147,7 +147,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/epcot/activity1":
+    case CONFIG.ROUTE.EPCOT_A1:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -161,7 +161,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/epcot/activity2":
+    case CONFIG.ROUTE.EPCOT_A2:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -175,7 +175,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/epcot/activity3":
+    case CONFIG.ROUTE.EPCOT_A3:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -189,7 +189,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/magic-kingdom/activity1":
+    case CONFIG.ROUTE.MAGIC_KINGDOM_A1:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -203,7 +203,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/magic-kingdom/activity2":
+    case CONFIG.ROUTE.MAGIC_KINGDOM_A2:
       helpDetails = (
         <>
           <h2>Instructions</h2>
@@ -217,7 +217,7 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
         </>
       );
       break;
-    case "/magic-kingdom/activity3":
+    case CONFIG.ROUTE.MAGIC_KINGDOM_A3:
       helpDetails = (
         <>
           <h2>Instructions</h2>
