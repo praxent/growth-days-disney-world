@@ -62,17 +62,24 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A1:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
+          <h3>Task 1: ETA 15 minutes</h3>
           <ul>
-            <li>Effect Hooks</li>
-            <li>Higher Order Component</li>
-            <li>Inter-Component Communication</li>
+            <li>Requirement 1</li>
+            <li>Requirement 2</li>
           </ul>
-          <h2>Feature Spotlight</h2>
+          <h3>Task 2: ETA 30 minutes</h3>
           <ul>
             <li>Requirement 1</li>
             <li>Requirement 2</li>
             <li>Requirement 3</li>
+          </ul>
+
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>Effect Hooks</li>
+            <li><a href="https://reactjs.org/docs/higher-order-components.html">Higher Order Component</a></li>
+            <li>Inter-Component Communication</li>
           </ul>
         </>
       );
@@ -80,7 +87,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A2:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>AK2</li>
           </ul>
@@ -94,7 +101,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A3:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>AK3</li>
           </ul>
@@ -108,7 +115,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A1:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>BB1</li>
           </ul>
@@ -122,7 +129,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A2:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>BB2</li>
           </ul>
@@ -136,7 +143,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A3:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>BB3</li>
           </ul>
@@ -150,7 +157,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A1:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>E1</li>
           </ul>
@@ -164,7 +171,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A2:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>E2</li>
           </ul>
@@ -178,7 +185,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A3:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>E3</li>
           </ul>
@@ -192,7 +199,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A1:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>MK1</li>
           </ul>
@@ -206,7 +213,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A2:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>MK2</li>
           </ul>
@@ -220,7 +227,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A3:
       helpDetails = (
         <>
-          <h2>Instructions</h2>
+          <h2>Requirements</h2>
           <ul>
             <li>MK3</li>
           </ul>
