@@ -80,12 +80,154 @@ function renderHelpDetails(pathname : string) : JSXElementConstructor {
     case "/animal-kingdom/activity2":
       helpDetails = (
         <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>AK2</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
         </>
       );
       break;
     case "/animal-kingdom/activity3":
       helpDetails = (
         <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>AK3</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/blizzard-beach/activity1":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>BB1</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/blizzard-beach/activity2":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>BB2</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/blizzard-beach/activity3":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>BB3</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/epcot/activity1":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>E1</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/epcot/activity2":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>E2</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/epcot/activity3":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>E3</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/magic-kingdom/activity1":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>MK1</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/magic-kingdom/activity2":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>MK2</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
+        </>
+      );
+      break;
+    case "/magic-kingdom/activity3":
+      helpDetails = (
+        <>
+          <h2>Instructions</h2>
+          <ul>
+            <li>MK3</li>
+          </ul>
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li>TODO</li>
+          </ul>
         </>
       );
       break;
