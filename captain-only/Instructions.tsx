@@ -78,7 +78,7 @@ function renderHelpDetails(pathname : string) {
           <h2>Feature Spotlight</h2>
           <ul>
             <li>Effect Hooks</li>
-            <li><a href="https://reactjs.org/docs/higher-order-components.html">Higher Order Component</a></li>
+            <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Component</a></li>
             <li>Inter-Component Communication</li>
           </ul>
         </>
