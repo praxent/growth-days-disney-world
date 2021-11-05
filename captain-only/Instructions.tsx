@@ -2,6 +2,7 @@ import * as React from "react";
 import { useLocation} from "react-router-dom";
 import styled from "styled-components";
 import {CONFIG} from "./config";
+import clock from "./images/clock.png";
 
 const Styles = styled.div`
   .display-help {
@@ -34,6 +35,16 @@ const Styles = styled.div`
     margin: 0;
     padding-left: 15px;
   }
+  
+  .eta {
+    float: right;
+  }
+  
+  .clock {
+    height: 20px;
+    width: 20px;
+    margin-bottom: -4px;
+  }
 `;
 
 function Instructions() {
@@ -63,12 +74,12 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: ETA 15 minutes</h3>
+          <h3>Task 1: <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Requirement 1</li>
             <li>Requirement 2</li>
           </ul>
-          <h3>Task 2: ETA 30 minutes</h3>
+          <h3>Task 2: <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Requirement 1</li>
             <li>Requirement 2</li>
