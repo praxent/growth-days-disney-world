@@ -74,23 +74,28 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Squirt the targets at Fossil Fun Games <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
-            <li>Requirement 1</li>
-            <li>Requirement 2</li>
+            <li>Get an image of the ride's target (if possible) and display it</li>
+            <li>use React's useState hook to to set a variable called shooting to true or false</li>
+            <li>When shooting is true, there should be some visual indication, like water hitting the target from a gun.</li>
           </ul>
-          <h3>Task 2: <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
-            <li>Requirement 1</li>
-            <li>Requirement 2</li>
-            <li>Requirement 3</li>
+          </ul>
+          <h3>Task 2: Make the squirt gun a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>Refactor the squirt gun to be a child component of the Game component</li>
+            <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
+            <li>Ensure the functionality still works as it did before</li>
           </ul>
 
           <h2>Feature Spotlight</h2>
           <ul>
+            <li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a></li>
+            <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">React props</a></li>
+            <li><a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Inter-Component Communication</a></li>
             <li>Effect Hooks</li>
             <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Component</a></li>
-            <li>Inter-Component Communication</li>
           </ul>
         </>
       );
@@ -127,12 +132,24 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
+          <h3>Task 1: Ride Summit Plummet at Blizzard Beach <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
-            <li>BB1</li>
+            <li>Get an image of the slide from Google and display it on the page</li>
+            <li>use React's useState hook to to set a variable called riding to true or false</li>
+            <li>When riding is true, there should be some visual indication, like a person moving down the slide.</li>
           </ul>
+          <h3>Task 2: Make the slide a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>Refactor the slide to be a child component of the Park component</li>
+            <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
+            <li>Ensure the functionality still works as it did before</li>
+          </ul>
+          
           <h2>Feature Spotlight</h2>
           <ul>
-            <li>TODO</li>
+            <li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a></li>
+            <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">React props</a></li>
+            <li><a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Inter-Component Communication</a></li>
           </ul>
         </>
       );
@@ -169,12 +186,23 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
+          <h3>Task 1: Ride Spaceship Earth at Epcot <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
-            <li>E1</li>
+            <li>Get an image of the ride and display it on the page</li>
+            <li>use React's useState hook to to set a variable called riding to true or false</li>
+            <li>When riding is true, there should be some visual indication, like the globe rotating.</li>
+          </ul>
+          <h3>Task 2: Make the globe a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>Refactor the globe to be a child component of the Park component</li>
+            <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
+            <li>Ensure the functionality still works as it did before</li>
           </ul>
           <h2>Feature Spotlight</h2>
           <ul>
-            <li>TODO</li>
+            <li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a></li>
+            <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">React props</a></li>
+            <li><a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Inter-Component Communication</a></li>
           </ul>
         </>
       );
@@ -211,12 +239,23 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
+          <h3>Task 1: Ride the Pirates of the Caribbean boat at Adventureland <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
-            <li>MK1</li>
+            <li>Get an image of the ride's boat from Google and display it on the page</li>
+            <li>use React's useState hook to to set a variable called riding to true or false</li>
+            <li>When riding is true, there should be some visual indication, like moving the boat.</li>
+          </ul>
+          <h3>Task 2: Make the ride a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>Refactor the ride to be a child component of the Park component</li>
+            <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
+            <li>Ensure the functionality still works as it did before</li>
           </ul>
           <h2>Feature Spotlight</h2>
           <ul>
-            <li>TODO</li>
+            <li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a></li>
+            <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">React props</a></li>
+            <li><a href="https://reactjs.org/docs/lifting-state-up.html" target="_blank">Inter-Component Communication</a></li>
           </ul>
         </>
       );
