@@ -436,6 +436,147 @@ function renderHelpDetails(pathname : string) {
         </>
       );
       break;
+    case CONFIG.ROUTE.ANIMAL_KINGDOM:
+      helpDetails = (
+        <>
+          <h2>Requirements</h2>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+
+          <h3>Task 3: Bonus!</h3>
+          <ul>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+          </ul>
+
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li><a href="TODO" target="_blank">TODO</a></li>
+          </ul>
+        </>
+      );
+      break;
+    case CONFIG.ROUTE.BLIZZARD_BEACH:
+      helpDetails = (
+        <>
+          <h2>Requirements</h2>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+
+          <h3>Task 3: Bonus!</h3>
+          <ul>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+          </ul>
+
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li><a href="TODO" target="_blank">TODO</a></li>
+          </ul>
+        </>
+      );
+      break;
+    case CONFIG.ROUTE.EPCOT:
+      helpDetails = (
+        <>
+          <h2>Requirements</h2>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <ul>
+            <li>TODO</li>
+          </ul>
+
+          <h3>Task 3: Bonus!</h3>
+          <ul>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+          </ul>
+
+          <h2>Feature Spotlight</h2>
+          <ul>
+            <li><a href="TODO" target="_blank">TODO</a></li>
+          </ul>
+        </>
+      );
+      break;
+    case CONFIG.ROUTE.MAGIC_KINGDOM:
+      if (import.meta.env["MODE"] == CONFIG.MODE.PHASE_2) {
+        helpDetails = (
+          <>
+            <h2>Requirements</h2>
+            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <ul>
+              <li>TODO</li>
+            </ul>
+            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <ul>
+              <li>TODO</li>
+            </ul>
+
+            <h3>Task 3: Bonus!</h3>
+            <ul>
+              <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+            </ul>
+
+            <h2>Feature Spotlight</h2>
+            <ul>
+              <li><a href="TODO" target="_blank">TODO</a></li>
+            </ul>
+          </>
+        );
+      } else {
+        helpDetails = (
+          <>
+            Instructions will show up here during Phase 2
+          </>
+        );
+      }
+      break;
+    case CONFIG.ROUTE.ROOT:
+      if (import.meta.env["MODE"] == CONFIG.MODE.PHASE_3) {
+        helpDetails = (
+          <>
+            <h2>Requirements</h2>
+            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <ul>
+              <li>TODO</li>
+            </ul>
+            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <ul>
+              <li>TODO</li>
+            </ul>
+
+            <h3>Task 3: Bonus!</h3>
+            <ul>
+              <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+            </ul>
+
+            <h2>Feature Spotlight</h2>
+            <ul>
+              <li><a href="TODO" target="_blank">TODO</a></li>
+            </ul>
+          </>
+        );
+      } else {
+        helpDetails = (
+          <>
+            Instructions will show up here during Phase 3
+          </>
+        );
+      }
+      break;
     default:
       helpDetails = (
         <>

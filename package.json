@@ -2,7 +2,9 @@
   "name": "disney-world",
   "version": "0.0.0",
   "scripts": {
-    "start": "run-p dev mockserver",
+    "phase1": "PHASE=PHASE_1 run-p dev mockserver",
+    "phase2": "PHASE=PHASE_2 run-p dev mockserver",
+    "phase3": "PHASE=PHASE_3 run-p dev mockserver",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
@@ -18,6 +20,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@types/node": "^16.11.7",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.15",

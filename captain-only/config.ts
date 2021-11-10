@@ -1,4 +1,9 @@
 export const CONFIG = {
+  MODE: {
+    PHASE_1: "PHASE_1",
+    PHASE_2: "PHASE_2",
+    PHASE_3: "PHASE_3",
+  },
   ROUTE: {
     ROOT: "/",
     ANY: "*",
