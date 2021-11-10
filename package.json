@@ -2,9 +2,11 @@
   "name": "disney-world",
   "version": "0.0.0",
   "scripts": {
+    "start": "run-p dev mockserver",
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "mockserver": "json-server --watch captain-only/db.json --port=4000"
   },
   "dependencies": {
     "json-server": "^0.17.0",
@@ -20,6 +22,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.15",
     "@vitejs/plugin-react": "^1.0.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }
