@@ -109,6 +109,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 1: Get the menu of drinks available at the Rainforest Cafe<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Display an image of the Rainforest Cafe at Disney's Animal Kingdom.</li>
+            <li>Ensure your local mock API is running - run <pre>json-server --watch src/db.json</pre>. You may need to specify a port other than 3000 if you receive an error, you can simply add the <pre>--port</pre> flag on your initial command, for example: <pre>json-server --watch src/db.json --port=3001</pre></li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
             <li>Your mock API endpoint will be <pre>http://localhost:3000/rainforest_cafe</pre></li>
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
@@ -200,6 +201,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 1: Get the menu of drinks available at the Lottawatta Lodge<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Display an image of the Lottawatta Lodge at Disney's Blizzard Beach.</li>
+            <li>Ensure your local mock API is running - run <pre>json-server --watch src/db.json</pre>. You may need to specify a port other than 3000 if you receive an error, you can simply add the <pre>--port</pre> flag on your initial command, for example: <pre>json-server --watch src/db.json --port=3001</pre></li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
             <li>Your mock API endpoint will be <pre>http://localhost:3000/lottawotta_lodge</pre></li>
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
@@ -291,6 +293,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 1: Get the menu of drinks available at the Space 220 Restaurant<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Display an image of the Space 220 Restaurant at Disney's Epcot Center.</li>
+            <li>Ensure your local mock API is running - run <pre>json-server --watch src/db.json</pre>. You may need to specify a port other than 3000 if you receive an error, you can simply add the <pre>--port</pre> flag on your initial command, for example: <pre>json-server --watch src/db.json --port=3001</pre></li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
             <li>Your mock API endpoint will be <pre>http://localhost:3000/space_220</pre></li>
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
@@ -382,6 +385,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 1: Get the menu of drinks available at the Liberty Tree Tavern<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Display an image of the Liberty Tree Tavern at Disney's Magic Kingdom.</li>
+            <li>Ensure your local mock API is running - run <pre>json-server --watch src/db.json</pre>. You may need to specify a port other than 3000 if you receive an error, you can simply add the <pre>--port</pre> flag on your initial command, for example: <pre>json-server --watch src/db.json --port=3001</pre></li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
             <li>Your mock API endpoint will be <pre>http://localhost:3000/liberty_tree</pre></li>
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
