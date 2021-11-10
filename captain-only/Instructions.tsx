@@ -66,7 +66,7 @@ function Instructions() {
 
   return (
     <Styles>
-      <button className="display-help pulse" onClick={onClick}>
+      <button className={`display-help ${showHelp? "" : "pulse"}`} onClick={onClick}>
         {showHelp ? "Hide Help" : "Show Help"}
       </button>
 
