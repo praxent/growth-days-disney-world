@@ -3,28 +3,34 @@ import { useLocation} from "react-router-dom";
 import styled from "styled-components";
 import {CONFIG} from "./config";
 import clock from "./images/clock.png";
+import squirtGunGame from "./images/squirt-gun-game.jpg";
+import boatRide from "./images/boat-ride.jpg";
+import summitPlummet from "./images/summit-plummet.jpg";
+import spaceshipEarth from "./images/spaceship-earth.jpg";
 
 const Styles = styled.div`
   .display-help {
     position: fixed;
     z-index: 9999;
     top: 5px;
-    left: 5px;
+    right: 5px;
   }
   
   .instructions {
     position: fixed;
     top: 0;
+    bottom: 0;
+    right: 0;
     z-index: 9998;
     max-width: 600px;
+    overflow: scroll;
   
-    padding: 40px 50px 20px 50px;
     background: white;
     box-shadow: 2px 2px 10px 0;
   }
   
-  .instructions {
-    left: 0;
+  .instruction-content {
+    padding: 40px 50px;
   }
   
   .instructions ul {
@@ -41,6 +47,10 @@ const Styles = styled.div`
     width: 20px;
     margin-bottom: -4px;
   }
+  
+  .instructions .banner {
+    width: 100%;
+  }
 `;
 
 function Instructions() {
@@ -56,7 +66,9 @@ function Instructions() {
 
       {showHelp &&
         <div className="instructions">
-          {renderHelpDetails(pathname)}
+          <div className="instruction-content">
+            {renderHelpDetails(pathname)}
+          </div>
         </div>
       }
     </Styles>
@@ -69,13 +81,14 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A1:
       helpDetails = (
         <>
+          <img className="banner" src={squirtGunGame} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Squirt the targets at Fossil Fun Games <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
           <ul>
             <li>Get an image of the ride's target (if possible) and display it</li>
             <li>Use React's useState hook to to set a variable called shooting to true or false</li>
-            <li>When shooting is true, there should be some visual indication, like water hitting the target from a gun.</li>
+            <li>When shooting is true, there should be some visual indication, like water hitting the target from a gun. </li>
           </ul>
           <ul>
           </ul>
@@ -154,6 +167,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A1:
       helpDetails = (
         <>
+          <img className="banner" src={summitPlummet} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Ride Summit Plummet at Blizzard Beach <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
@@ -237,6 +251,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A1:
       helpDetails = (
         <>
+          <img className="banner" src={spaceshipEarth} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Ride Spaceship Earth at Epcot <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
@@ -320,6 +335,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A1:
       helpDetails = (
         <>
+          <img className="banner" src={boatRide} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Ride the Pirates of the Caribbean boat at Adventureland <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
