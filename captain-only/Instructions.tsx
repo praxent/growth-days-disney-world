@@ -3,10 +3,16 @@ import { useLocation} from "react-router-dom";
 import styled from "styled-components";
 import {CONFIG} from "./config";
 import clock from "./images/clock.png";
+
 import squirtGunGame from "./images/squirt-gun-game.jpg";
 import boatRide from "./images/boat-ride.jpg";
 import summitPlummet from "./images/summit-plummet.jpg";
 import spaceshipEarth from "./images/spaceship-earth.jpg";
+
+import libertyTreeTavern from "./images/liberty-tree-tavern.jpg";
+import lottawattaLodge from "./images/lottawatta-lodge.jpg";
+import rainforestCafe from "./images/rainforest-cafe.jpg";
+import space220 from "./images/space-220.jpg";
 
 const Styles = styled.div`
   .display-help {
@@ -23,7 +29,7 @@ const Styles = styled.div`
     right: 0;
     z-index: 9998;
     max-width: 600px;
-    overflow: scroll;
+    overflow-y: scroll;
   
     background: white;
     box-shadow: 2px 2px 10px 0;
@@ -117,6 +123,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A2:
       helpDetails = (
         <>
+          <img className="banner" src={rainforestCafe} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Get the menu of drinks available at the Rainforest Cafe<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
@@ -210,6 +217,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A2:
       helpDetails = (
         <>
+          <img className="banner" src={lottawattaLodge} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Get the menu of drinks available at the Lottawatta Lodge<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
@@ -303,6 +311,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A2:
       helpDetails = (
         <>
+          <img className="banner" src={space220} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Get the menu of drinks available at the Space 220 Restaurant<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
@@ -396,6 +405,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A2:
       helpDetails = (
         <>
+          <img className="banner" src={libertyTreeTavern} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Get the menu of drinks available at the Liberty Tree Tavern<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
