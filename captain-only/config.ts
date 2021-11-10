@@ -1,9 +1,7 @@
+console.log(import.meta.env["MODE"])
+console.log(parseInt(import.meta.env["MODE"]))
 export const CONFIG = {
-  MODE: {
-    PHASE_1: "PHASE_1",
-    PHASE_2: "PHASE_2",
-    PHASE_3: "PHASE_3",
-  },
+  PHASE: parseInt(import.meta.env["MODE"]),
   ROUTE: {
     ROOT: "/",
     ANY: "*",
