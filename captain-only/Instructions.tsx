@@ -216,7 +216,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 3: Bonus!</h3>
           <ul>
             <li>If you finish early, add the ability to refund an ice cream. This will help make your case for the cash prize at the end!</li>
-            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total ice cream count rather than decrements it. For example, maybe someone's ice cream was handed to them already melted.</li>
+            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total ice cream count rather than decrements it. For example, maybe someone's ice cream was handed to them already melted, and though they should have anticipated that, they're still furious.</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -309,7 +309,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 3: Bonus!</h3>
           <ul>
             <li>If you finish early, add the ability to refund a Lightyear Lemonade. This will help make your case for the cash prize at the end!</li>
-            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total Lightyear Lemonade count rather than decrements it. For example, maybe someone found a hair in their Lightyear Lemonade, or their Lightyear Lemonade gave them food poisoning.</li>
+            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total Lightyear Lemonade count rather than decrements it. For example, maybe someone suddenly realized they hate Lightyear Lemonades, or their Lightyear Lemonade brought back horrific memories from their past.</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -402,7 +402,7 @@ function renderHelpDetails(pathname : string) {
           <h3>Task 3: Bonus!</h3>
           <ul>
             <li>If you finish early, add the ability to refund a Sweet Tea Slushie. This will help make your case for the cash prize at the end!</li>
-            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total Sweet Tea Slushie count rather than decrements it. For example, maybe someone found a hair in their Lightyear Lemonade, or their Lightyear Lemonade gave them food poisoning.</li>
+            <li>Essentially the inverse of the purchasing logic - make an API call that increments the total Sweet Tea Slushie count rather than decrements it. For example, maybe someone realized their Sweet Tea Slushie was entirely too sweet - and the resulting sugar rush has driven them into a state of psychosis.</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
