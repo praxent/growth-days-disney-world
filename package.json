@@ -2,22 +2,30 @@
   "name": "disney-world",
   "version": "0.0.0",
   "scripts": {
+    "phase1": "PHASE=PHASE_1 run-p dev mockserver",
+    "phase2": "PHASE=PHASE_2 run-p dev mockserver",
+    "phase3": "PHASE=PHASE_3 run-p dev mockserver",
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "mockserver": "json-server --watch captain-only/db.json --port=4000"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-is": "^17.0.2",
     "react-router": "^6.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@types/node": "^16.11.7",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.15",
     "@vitejs/plugin-react": "^1.0.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }
