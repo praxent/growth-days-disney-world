@@ -142,8 +142,7 @@ function renderHelpDetails(pathname : string) {
 
           <h3>Task 3: Bonus!</h3>
           <ul>
-            <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
-            <li>Establish a way to consider whether or not a specific user ("customer") is above the legal drinking age (21). If they are under 21, they should not be allowed to purchase alcoholic items.</li>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -163,7 +162,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li>TODO</li>
           </ul>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>TODO</li>
           </ul>
@@ -236,8 +235,7 @@ function renderHelpDetails(pathname : string) {
 
           <h3>Task 3: Bonus!</h3>
           <ul>
-            <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
-            <li>Establish a way to consider whether or not a specific user ("customer") is above the legal drinking age (21). If they are under 21, they should not be allowed to purchase alcoholic items.</li>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -257,7 +255,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li>TODO</li>
           </ul>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>TODO</li>
           </ul>
@@ -330,8 +328,7 @@ function renderHelpDetails(pathname : string) {
 
           <h3>Task 3: Bonus!</h3>
           <ul>
-            <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
-            <li>Establish a way to consider whether or not a specific user ("customer") is above the legal drinking age (21). If they are under 21, they should not be allowed to purchase alcoholic items.</li>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -351,7 +348,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li>TODO</li>
           </ul>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>TODO</li>
           </ul>
@@ -424,8 +421,7 @@ function renderHelpDetails(pathname : string) {
 
           <h3>Task 3: Bonus!</h3>
           <ul>
-            <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
-            <li>Establish a way to consider whether or not a specific user ("customer") is above the legal drinking age (21). If they are under 21, they should not be allowed to purchase alcoholic items.</li>
+            <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
           </ul>
 
           <h2>Feature Spotlight - defer to functional examples, not class examples!</h2>
@@ -445,7 +441,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li>TODO</li>
           </ul>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>TODO</li>
           </ul>
@@ -471,7 +467,7 @@ function renderHelpDetails(pathname : string) {
             <ul>
               <li>TODO</li>
             </ul>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
             <ul>
               <li>TODO</li>
             </ul>
@@ -504,7 +500,7 @@ function renderHelpDetails(pathname : string) {
             <ul>
               <li>TODO</li>
             </ul>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
             <ul>
               <li>TODO</li>
             </ul>
@@ -537,7 +533,7 @@ function renderHelpDetails(pathname : string) {
             <ul>
               <li>TODO</li>
             </ul>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
             <ul>
               <li>TODO</li>
             </ul>
@@ -570,7 +566,7 @@ function renderHelpDetails(pathname : string) {
             <ul>
               <li>TODO</li>
             </ul>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
             <ul>
               <li>TODO</li>
             </ul>
@@ -599,11 +595,15 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
             <ul>
-              <li>TODO</li>
+              <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
+              <li>
+                Establish a way to consider whether or not a specific user ("customer") is above the legal drinking
+                age (21). If they are under 21, they should not be allowed to purchase alcoholic items.
+              </li>
             </ul>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
             <ul>
               <li>TODO</li>
             </ul>
