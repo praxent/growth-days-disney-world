@@ -14,6 +14,15 @@ import lottawattaLodge from "./images/lottawatta-lodge.jpg";
 import rainforestCafe from "./images/rainforest-cafe.jpg";
 import space220 from "./images/space-220.jpg";
 
+import spaceshipWindow from "./images/spaceship-window.jpg";
+import zoo from "./images/zoo.jpg";
+import lifeguard from "./images/lifeguard.png";
+import hagrid from "./images/hagrid.jpg";
+
+import krabs from "./images/krabs.jpg";
+
+import disneyFireworks from "./images/disney-fireworks.jpg";
+
 const Styles = styled.div`
   .display-help {
     position: fixed;
@@ -157,6 +166,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.ANIMAL_KINGDOM_A3:
       helpDetails = (
         <>
+          <img className="banner" src={zoo} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Walking around the Zoo <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
@@ -258,6 +268,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.BLIZZARD_BEACH_A3:
       helpDetails = (
         <>
+          <img className="banner" src={lifeguard} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Security Cameras <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
@@ -359,6 +370,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.EPCOT_A3:
       helpDetails = (
         <>
+          <img className="banner" src={spaceshipWindow} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Space Museum <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
@@ -370,7 +382,7 @@ function renderHelpDetails(pathname : string) {
 
           <h3>Task 2: Space Exploration <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>Overlay a small space ship over the Outlet component so we can look out the windows as we fly by</li>
+            <li>Overlay a space ship window over the Outlet component so we can look out the windows as we fly by</li>
             <li>Find a cool space sound clip online for each planet</li>
             <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that planet.</li>
           </ul>
@@ -460,6 +472,7 @@ function renderHelpDetails(pathname : string) {
     case CONFIG.ROUTE.MAGIC_KINGDOM_A3:
       helpDetails = (
         <>
+          <img className="banner" src={hagrid} />
           <h2>Requirements</h2>
 
           <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
@@ -494,11 +507,13 @@ function renderHelpDetails(pathname : string) {
       if (CONFIG.PHASE >= 2) {
         helpDetails = (
           <>
+            <img className="banner" src={krabs} />
+
             <h2>Requirements</h2>
             <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
-              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/animal-kingdom/Wallet)</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/animal-kingdom/Wallet</pre></li>
               <li>This Wallet should have an initial balance of 20 units</li>
               <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
               <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
@@ -527,11 +542,13 @@ function renderHelpDetails(pathname : string) {
       if (CONFIG.PHASE >= 2) {
         helpDetails = (
           <>
+            <img className="banner" src={krabs} />
+
             <h2>Requirements</h2>
             <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
-              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/blizzard-beach/Wallet)</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/blizzard-beach/Wallet</pre></li>
               <li>This Wallet should have an initial balance of 20 units</li>
               <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
               <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
@@ -560,11 +577,13 @@ function renderHelpDetails(pathname : string) {
       if (CONFIG.PHASE >= 2) {
         helpDetails = (
           <>
+            <img className="banner" src={krabs} />
+
             <h2>Requirements</h2>
             <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
-              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/epcot/Wallet)</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/epcot/Wallet</pre></li>
               <li>This Wallet should have an initial balance of 20 units</li>
               <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
               <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
@@ -593,11 +612,13 @@ function renderHelpDetails(pathname : string) {
       if (CONFIG.PHASE >= 2) {
         helpDetails = (
           <>
+            <img className="banner" src={krabs} />
+
             <h2>Requirements</h2>
             <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
-              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/magic-kingdom/Wallet)</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/magic-kingdom/Wallet</pre></li>
               <li>This Wallet should have an initial balance of 20 units</li>
               <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
               <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
@@ -626,6 +647,8 @@ function renderHelpDetails(pathname : string) {
       if (CONFIG.PHASE >= 3) {
         helpDetails = (
           <>
+            <img className="banner" src={disneyFireworks} />
+
             <h2>Requirements</h2>
             <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 60 minutes</span></h3>
             <ul>
@@ -636,10 +659,10 @@ function renderHelpDetails(pathname : string) {
               </li>
               <li>"child mode" should be the default with the option to elevate to "adult mode"</li>
               <li>
-                Two buttons "Child" and "Adult" should be added to the /captain-only/DisneyWorld.tsx. These buttons
+                Two buttons "Child" and "Adult" should be added to the <pre>/captain-only/DisneyWorld.tsx</pre> These buttons
                 should be visible everywhere in Disney World
               </li>
-              <li>The React Context component(s) should be added to /captain-only/DisneyWorld.tsx.</li>
+              <li>The React Context component(s) should be added to <pre>/captain-only/DisneyWorld.tsx</pre></li>
               <li>Congratulations, you've learned enough React to be a captain!</li>
             </ul>
 
@@ -647,31 +670,31 @@ function renderHelpDetails(pathname : string) {
             <ul>
               <li>
                 Once complete, each team member should use the new Context component to update their park's features to
-                be child proofed
+                be child proofed:
                 <ul>
                   <li>
-                    Animal Kingdom
+                    <strong>Animal Kingdom</strong>
                     <ul>
                       <li>Only adults are allowed to purchase alcoholic beverages from Rainforest Cafe</li>
                       <li>Only adults are allowed to approach Lions</li>
                     </ul>
                   </li>
                   <li>
-                    Blizzard Beach
+                    <strong>Blizzard Beach</strong>
                     <ul>
                       <li>Only adults are allowed to purchase alcoholic beverages from Lottawatta Lodge</li>
                       <li>Only adults are allowed in Runoff Rapids</li>
                     </ul>
                   </li>
                   <li>
-                    Epcot
+                    <strong>Epcot</strong>
                     <ul>
                       <li>Only adults are allowed to purchase alcoholic beverages from Space 220</li>
                       <li>Only adults are allowed to travel all the way to Saturn</li>
                     </ul>
                   </li>
                   <li>
-                    Magic Kingdom
+                    <strong>Magic Kingdom</strong>
                     <ul>
                       <li>Only adults are allowed to purchase alcoholic beverages from Liberty Tree Tavern</li>
                       <li>Only adults are allowed to cast Lightning spells</li>
