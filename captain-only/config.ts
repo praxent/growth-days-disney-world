@@ -1,5 +1,5 @@
 export const CONFIG = {
-  PHASE: 1,
+  PHASE: 3,
   ROUTE: {
     ROOT: "/",
     ANY: "*",

@@ -166,7 +166,7 @@ function renderHelpDetails(pathname : string) {
             <li>Display an image of a Lion, a Zebra, a Giraffe, and a Chimpanzee inside the Outlet</li>
           </ul>
 
-          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Cage the Animals <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
             <li>Overlay a fence over the Outlet component so the animals don't escape.</li>
             <li>Find a sound clip online for each animal</li>
@@ -267,7 +267,7 @@ function renderHelpDetails(pathname : string) {
             <li>Display an image of Cross Country Creek, Melt Away Bay, Runoff Rapids, and Snow Stormers inside the Outlet</li>
           </ul>
 
-          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Monitor the Customers for Safety <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
             <li>Overlay a security camera over the Outlet component so we can monitor customers to ensure their swimming safety</li>
             <li>Find a unique sound clip online that represents each of the water types (still water, running water, waterfall, rapids, etc.)</li>
@@ -368,7 +368,7 @@ function renderHelpDetails(pathname : string) {
             <li>Display an image of Planet Earth, Mars, Saturn, and Jupiter inside the Outlet</li>
           </ul>
 
-          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Space Exploration <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
             <li>Overlay a small space ship over the Outlet component so we can look out the windows as we fly by</li>
             <li>Find a cool space sound clip online for each planet</li>
@@ -469,7 +469,7 @@ function renderHelpDetails(pathname : string) {
             <li>Display an image of Fire, Water, Lightning, and something "Dark Magic" inside the Outlet</li>
           </ul>
 
-          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Yer a Wizard, Harry <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
             <li>Overlay a wand over the Outlet component so we can cast the spells</li>
             <li>Find a unique sound clip online that represents each of the spell types</li>
@@ -627,27 +627,69 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 60 minutes</span></h3>
             <ul>
-              <li>If you finish early, there is a value on each menu item called "type" - this refers to whether or not the item has alcohol in it.</li>
+              <li>Every park in all of Disney World needs to be child-proofed!</li>
               <li>
-                Establish a way to consider whether or not a specific user ("customer") is above the legal drinking
-                age (21). If they are under 21, they should not be allowed to purchase alcoholic items.
+                Work with everyone assigned to your Disney World group to devise a React Context component, or set of
+                components, that provides all parks and all of Disney World, with the ability to toggle between "adult mode" and "child mode"
               </li>
+              <li>"child mode" should be the default with the option to elevate to "adult mode"</li>
+              <li>
+                Two buttons "Child" and "Adult" should be added to the /captain-only/DisneyWorld.tsx. These buttons
+                should be visible everywhere in Disney World
+              </li>
+              <li>The React Context component(s) should be added to /captain-only/DisneyWorld.tsx.</li>
+              <li>Congratulations, you've learned enough React to be a captain!</li>
             </ul>
-            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+
+            <h3>Task 2: Park Updates <span className="eta"><img className="clock" src={clock} /> 30 minutes</span></h3>
             <ul>
-              <li>TODO</li>
+              <li>
+                Once complete, each team member should use the new Context component to update their park's features to
+                be child proofed
+                <ul>
+                  <li>
+                    Animal Kingdom
+                    <ul>
+                      <li>Only adults are allowed to purchase alcoholic beverages from Rainforest Cafe</li>
+                      <li>Only adults are allowed to approach Lions</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Blizzard Beach
+                    <ul>
+                      <li>Only adults are allowed to purchase alcoholic beverages from Lottawatta Lodge</li>
+                      <li>Only adults are allowed in Runoff Rapids</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Epcot
+                    <ul>
+                      <li>Only adults are allowed to purchase alcoholic beverages from Space 220</li>
+                      <li>Only adults are allowed to travel all the way to Saturn</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Magic Kingdom
+                    <ul>
+                      <li>Only adults are allowed to purchase alcoholic beverages from Liberty Tree Tavern</li>
+                      <li>Only adults are allowed to cast Lightning spells</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
 
             <h3>Task 3: Bonus!</h3>
             <ul>
-              <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
+              <li>Building Disney World is a huge endeavour; we could never have done it without you help! Give yourself a pat on the back!</li>
             </ul>
 
             <h2>Feature Spotlight</h2>
             <ul>
-              <li><a href="TODO" target="_blank">TODO</a></li>
+              <li><a href="https://reactjs.org/docs/context.html" target="_blank">React Context</a></li>
+              <li><a href="https://reactjs.org/docs/hooks-reference.html#usecontext" target="_blank">useContext Hook</a></li>
             </ul>
           </>
         );
