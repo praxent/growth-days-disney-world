@@ -28,9 +28,9 @@ function BlizzardBeach() {
         <div className="map-container">
           <img src={blizzardBeach} className="map"/>
           <div className="labels">
-            <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A1}><span className="label pulse activity1">Summit Plummet</span></Link>
-            <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A2}><span className="label pulse activity2">Lottawatta Lodge</span></Link>
-            <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A3}><span className="label pulse activity3">Melt Away Bad</span></Link>
+            {CONFIG.ACTIVITY >= 1 && <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A1}><span className="label pulse activity1">Summit Plummet</span></Link>}
+            {CONFIG.ACTIVITY >= 2 && <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A2}><span className="label pulse activity2">Lottawatta Lodge</span></Link>}
+            {CONFIG.ACTIVITY >= 3 && <Link to={CONFIG.ROUTE.BLIZZARD_BEACH_A3}><span className="label pulse activity3">Melt Away Bad</span></Link>}
           </div>
         </div>
       </div>

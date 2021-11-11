@@ -28,9 +28,9 @@ function AnimalKingdom() {
         <div className="map-container">
           <img src={animalKingdom} className="map"/>
           <div className="labels">
-            <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A1}><span className="label pulse activity1">Fossil Fun Games</span></Link>
-            <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A2}><span className="label pulse activity2">Rainforest Cafe</span></Link>
-            <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A3}><span className="label pulse activity3">Zoo</span></Link>
+            {CONFIG.ACTIVITY >= 1 && <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A1}><span className="label pulse activity1">Fossil Fun Games</span></Link>}
+            {CONFIG.ACTIVITY >= 2 && <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A2}><span className="label pulse activity2">Rainforest Cafe</span></Link>}
+            {CONFIG.ACTIVITY >= 3 && <Link to={CONFIG.ROUTE.ANIMAL_KINGDOM_A3}><span className="label pulse activity3">Zoo</span></Link>}
           </div>
         </div>
       </div>

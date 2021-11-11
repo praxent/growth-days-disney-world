@@ -504,7 +504,7 @@ function renderHelpDetails(pathname : string) {
       );
       break;
     case CONFIG.ROUTE.ANIMAL_KINGDOM:
-      if (CONFIG.PHASE >= 2) {
+      if (CONFIG.ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -533,13 +533,13 @@ function renderHelpDetails(pathname : string) {
       } else {
         helpDetails = (
           <>
-            Instructions will show up here during Phase 2
+            Instructions will show up here during Activity 4
           </>
         );
       }
       break;
     case CONFIG.ROUTE.BLIZZARD_BEACH:
-      if (CONFIG.PHASE >= 2) {
+      if (CONFIG.ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -568,13 +568,13 @@ function renderHelpDetails(pathname : string) {
       } else {
         helpDetails = (
           <>
-            Instructions will show up here during Phase 2
+            Instructions will show up here during Activity 4
           </>
         );
       }
       break;
     case CONFIG.ROUTE.EPCOT:
-      if (CONFIG.PHASE >= 2) {
+      if (CONFIG.ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -603,13 +603,13 @@ function renderHelpDetails(pathname : string) {
       } else {
         helpDetails = (
           <>
-            Instructions will show up here during Phase 2
+            Instructions will show up here during Activity 4
           </>
         );
       }
       break;
     case CONFIG.ROUTE.MAGIC_KINGDOM:
-      if (CONFIG.PHASE >= 2) {
+      if (CONFIG.ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -638,13 +638,13 @@ function renderHelpDetails(pathname : string) {
       } else {
         helpDetails = (
           <>
-            Instructions will show up here during Phase 2
+            Instructions will show up here during Activity 4
           </>
         );
       }
       break;
     case CONFIG.ROUTE.ROOT:
-      if (CONFIG.PHASE >= 3) {
+      if (CONFIG.ACTIVITY >= 5) {
         helpDetails = (
           <>
             <img className="banner" src={disneyFireworks} />
@@ -719,7 +719,7 @@ function renderHelpDetails(pathname : string) {
       } else {
         helpDetails = (
           <>
-            Instructions will show up here during Phase 3
+            Instructions will show up here during Activity 5
           </>
         );
       }

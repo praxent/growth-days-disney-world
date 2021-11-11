@@ -28,9 +28,9 @@ function MagicKingdom() {
         <div className="map-container">
           <img src={magicKingdom} className="map"/>
           <div className="labels">
-            <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A1}><span className="label pulse activity1">Pirates of the Carribean</span></Link>
-            <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A2}><span className="label pulse activity2">Liberty Tree Tavern</span></Link>
-            <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A3}><span className="label pulse activity3">Magic Lessons</span></Link>
+            {CONFIG.ACTIVITY >= 1 && <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A1}><span className="label pulse activity1">Pirates of the Carribean</span></Link>}
+            {CONFIG.ACTIVITY >= 2 && <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A2}><span className="label pulse activity2">Liberty Tree Tavern</span></Link>}
+            {CONFIG.ACTIVITY >= 3 && <Link to={CONFIG.ROUTE.MAGIC_KINGDOM_A3}><span className="label pulse activity3">Magic Lessons</span></Link>}
           </div>
         </div>
       </div>
