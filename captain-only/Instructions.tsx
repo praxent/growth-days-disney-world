@@ -260,18 +260,18 @@ function renderHelpDetails(pathname : string) {
         <>
           <h2>Requirements</h2>
 
-          <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Security Cameras <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
-            <li>Make 4 buttons labelled "Dark Spell", "Fire Spell", "Water Spell", and "Lightning Spell"</li>
+            <li>Make 4 buttons labelled "Cross Country Creek", "Melt Away Bay", "Runoff Rapids", and "Snow Stormers"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
-            <li>Display an image of Fire, Water, Lightning, and something "Dark Magic" inside the Outlet</li>
+            <li>Display an image of Cross Country Creek, Melt Away Bay, Runoff Rapids, and Snow Stormers inside the Outlet</li>
           </ul>
 
           <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>Overlay a wand over the Outlet component so we can cast the spells</li>
-            <li>Find a unique sound clip online that represents each of the spell types</li>
-            <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that spell.</li>
+            <li>Overlay a security camera over the Outlet component so we can monitor customers to ensure their swimming safety</li>
+            <li>Find a unique sound clip online that represents each of the water types (still water, running water, waterfall, rapids, etc.)</li>
+            <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that security camera location.</li>
           </ul>
 
           <h3>Task 3: Bonus!</h3>
@@ -283,7 +283,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">React Router</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio" target="_blank">AudioElement</a></li>
-            <li><a href="https://www.zapsplat.com/?s=dark+spell&post_type=music&sound-effect-category-id=" target="_blank">Dark Spell Noise</a></li>
+            <li><a href="https://www.zapsplat.com/?s=water&post_type=music&sound-effect-category-id=" target="_blank">Water Noise</a></li>
           </ul>
         </>
       );
