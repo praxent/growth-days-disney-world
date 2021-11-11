@@ -373,7 +373,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={spaceshipWindow} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Space Museum <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Universe of Energy <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
             <li>Make 4 buttons labelled "Visit Earth", "Visit Mars", "Visit Saturn", and "Visit Jupiter"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
