@@ -495,23 +495,23 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
-              <li>TODO</li>
-            </ul>
-            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
-            <ul>
-              <li>TODO</li>
+              <li>All activities in Disney World require payment.</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/animal-kingdom/Wallet)</li>
+              <li>This Wallet should have an initial balance of 20 units</li>
+              <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
+              <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
             </ul>
 
-            <h3>Task 3: Bonus!</h3>
+            <h3>Task 2: Bonus!</h3>
             <ul>
               <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
             </ul>
 
             <h2>Feature Spotlight</h2>
             <ul>
-              <li><a href="TODO" target="_blank">TODO</a></li>
+              <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Components</a></li>
             </ul>
           </>
         );
@@ -528,23 +528,23 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
-              <li>TODO</li>
-            </ul>
-            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
-            <ul>
-              <li>TODO</li>
+              <li>All activities in Disney World require payment.</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/blizzard-beach/Wallet)</li>
+              <li>This Wallet should have an initial balance of 20 units</li>
+              <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
+              <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
             </ul>
 
-            <h3>Task 3: Bonus!</h3>
+            <h3>Task 2: Bonus!</h3>
             <ul>
               <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
             </ul>
 
             <h2>Feature Spotlight</h2>
             <ul>
-              <li><a href="TODO" target="_blank">TODO</a></li>
+              <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Components</a></li>
             </ul>
           </>
         );
@@ -561,23 +561,23 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
-              <li>TODO</li>
-            </ul>
-            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
-            <ul>
-              <li>TODO</li>
+              <li>All activities in Disney World require payment.</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/epcot/Wallet)</li>
+              <li>This Wallet should have an initial balance of 20 units</li>
+              <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
+              <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
             </ul>
 
-            <h3>Task 3: Bonus!</h3>
+            <h3>Task 2: Bonus!</h3>
             <ul>
               <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
             </ul>
 
             <h2>Feature Spotlight</h2>
             <ul>
-              <li><a href="TODO" target="_blank">TODO</a></li>
+              <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Components</a></li>
             </ul>
           </>
         );
@@ -594,23 +594,23 @@ function renderHelpDetails(pathname : string) {
         helpDetails = (
           <>
             <h2>Requirements</h2>
-            <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
             <ul>
-              <li>TODO</li>
-            </ul>
-            <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
-            <ul>
-              <li>TODO</li>
+              <li>All activities in Disney World require payment.</li>
+              <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory (/src/magic-kingdom/Wallet)</li>
+              <li>This Wallet should have an initial balance of 20 units</li>
+              <li>Wrap the components you built during Activities 1, 2 and 3 such that any button clicked subtracts 1 from the wallet balance in the HOC.</li>
+              <li>If the wallet balance reaches 0, the buttons should no longer be clickable :(</li>
             </ul>
 
-            <h3>Task 3: Bonus!</h3>
+            <h3>Task 2: Bonus!</h3>
             <ul>
               <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
             </ul>
 
             <h2>Feature Spotlight</h2>
             <ul>
-              <li><a href="TODO" target="_blank">TODO</a></li>
+              <li><a href="https://reactjs.org/docs/higher-order-components.html" target="_blank">Higher Order Components</a></li>
             </ul>
           </>
         );
