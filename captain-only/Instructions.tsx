@@ -158,13 +158,19 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+
+          <h3>Task 1: Walking around the Zoo <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Make 4 buttons labelled "Visit Lion", "Visit Zebra", "Visit Giraffe", and "Visit Chimpanzee"</li>
+            <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
+            <li>Display an image of a Lion, a Zebra, a Giraffe, and a Chimpanzee inside the Outlet</li>
           </ul>
-          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+
+          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Overlay a fence over the Outlet component so the animals don't escape.</li>
+            <li>Find a sound clip online for each animal</li>
+            <li>Using JavaScript AudioElement, play that animal's audio when the button is clicked that enters the route for that animal.</li>
           </ul>
 
           <h3>Task 3: Bonus!</h3>
@@ -174,7 +180,9 @@ function renderHelpDetails(pathname : string) {
 
           <h2>Feature Spotlight</h2>
           <ul>
-            <li><a href="TODO" target="_blank">TODO</a></li>
+            <li><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">React Router</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio" target="_blank">AudioElement</a></li>
+            <li><a href="https://www.zapsplat.com/?s=lion&post_type=music&sound-effect-category-id=" target="_blank">Animal Noise</a></li>
           </ul>
         </>
       );
@@ -251,13 +259,19 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+
+          <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Make 4 buttons labelled "Dark Spell", "Fire Spell", "Water Spell", and "Lightning Spell"</li>
+            <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
+            <li>Display an image of Fire, Water, Lightning, and something "Dark Magic" inside the Outlet</li>
           </ul>
-          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+
+          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Overlay a wand over the Outlet component so we can cast the spells</li>
+            <li>Find a unique sound clip online that represents each of the spell types</li>
+            <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that spell.</li>
           </ul>
 
           <h3>Task 3: Bonus!</h3>
@@ -267,7 +281,9 @@ function renderHelpDetails(pathname : string) {
 
           <h2>Feature Spotlight</h2>
           <ul>
-            <li><a href="TODO" target="_blank">TODO</a></li>
+            <li><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">React Router</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio" target="_blank">AudioElement</a></li>
+            <li><a href="https://www.zapsplat.com/?s=dark+spell&post_type=music&sound-effect-category-id=" target="_blank">Dark Spell Noise</a></li>
           </ul>
         </>
       );
@@ -344,13 +360,19 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+
+          <h3>Task 1: Space Museum <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Make 4 buttons labelled "Visit Earth", "Visit Mars", "Visit Saturn", and "Visit Jupiter"</li>
+            <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
+            <li>Display an image of Planet Earth, Mars, Saturn, and Jupiter inside the Outlet</li>
           </ul>
-          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+
+          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Overlay a small space ship over the Outlet component so we can look out the windows as we fly by</li>
+            <li>Find a cool space sound clip online for each planet</li>
+            <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that planet.</li>
           </ul>
 
           <h3>Task 3: Bonus!</h3>
@@ -360,7 +382,9 @@ function renderHelpDetails(pathname : string) {
 
           <h2>Feature Spotlight</h2>
           <ul>
-            <li><a href="TODO" target="_blank">TODO</a></li>
+            <li><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">React Router</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio" target="_blank">AudioElement</a></li>
+            <li><a href="https://www.zapsplat.com/?s=space&post_type=music&sound-effect-category-id=" target="_blank">Space Noise</a></li>
           </ul>
         </>
       );
@@ -437,13 +461,19 @@ function renderHelpDetails(pathname : string) {
       helpDetails = (
         <>
           <h2>Requirements</h2>
-          <h3>Task 1: TODO <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+
+          <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Make 4 buttons labelled "Dark Spell", "Fire Spell", "Water Spell", and "Lightning Spell"</li>
+            <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
+            <li>Display an image of Fire, Water, Lightning, and something "Dark Magic" inside the Outlet</li>
           </ul>
-          <h3>Task 2: TODO <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+
+          <h3>Task 2:  <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
           <ul>
-            <li>TODO</li>
+            <li>Overlay a wand over the Outlet component so we can cast the spells</li>
+            <li>Find a unique sound clip online that represents each of the spell types</li>
+            <li>Using JavaScript AudioElement, play a unique audio when the button is clicked that enters the route for that spell.</li>
           </ul>
 
           <h3>Task 3: Bonus!</h3>
@@ -453,7 +483,9 @@ function renderHelpDetails(pathname : string) {
 
           <h2>Feature Spotlight</h2>
           <ul>
-            <li><a href="TODO" target="_blank">TODO</a></li>
+            <li><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">React Router</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio" target="_blank">AudioElement</a></li>
+            <li><a href="https://www.zapsplat.com/?s=dark+spell&post_type=music&sound-effect-category-id=" target="_blank">Dark Spell Noise</a></li>
           </ul>
         </>
       );
