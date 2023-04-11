@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useLocation} from "react-router-dom";
 import styled from "styled-components";
+import {ACTIVITY} from "../activity";
 import {CONFIG} from "./config";
 import clock from "./images/clock.png";
 
@@ -30,7 +31,7 @@ const Styles = styled.div`
     top: 5px;
     right: 5px;
   }
-  
+
   .instructions {
     position: fixed;
     top: 0;
@@ -39,30 +40,30 @@ const Styles = styled.div`
     z-index: 9998;
     max-width: 600px;
     overflow-y: scroll;
-  
+
     background: white;
     box-shadow: 2px 2px 10px 0;
   }
-  
+
   .instruction-content {
     padding: 40px 50px;
   }
-  
+
   .instructions ul {
     margin: 0;
     padding-left: 15px;
   }
-  
+
   .eta {
     float: right;
   }
-  
+
   .clock {
     height: 20px;
     width: 20px;
     margin-bottom: -4px;
   }
-  
+
   .instructions .banner {
     width: 100%;
   }
@@ -221,7 +222,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
             <li>If you finish early, add an additional creative feature or functionality. This will help make your case for the cash prize at the end!</li>
           </ul>
-          
+
           <h2>Feature Spotlight</h2>
           <ul>
             <li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a></li>
@@ -504,7 +505,7 @@ function renderHelpDetails(pathname : string) {
       );
       break;
     case CONFIG.ROUTE.ANIMAL_KINGDOM:
-      if (CONFIG.ACTIVITY >= 4) {
+      if (ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -539,7 +540,7 @@ function renderHelpDetails(pathname : string) {
       }
       break;
     case CONFIG.ROUTE.BLIZZARD_BEACH:
-      if (CONFIG.ACTIVITY >= 4) {
+      if (ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -574,7 +575,7 @@ function renderHelpDetails(pathname : string) {
       }
       break;
     case CONFIG.ROUTE.EPCOT:
-      if (CONFIG.ACTIVITY >= 4) {
+      if (ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -609,7 +610,7 @@ function renderHelpDetails(pathname : string) {
       }
       break;
     case CONFIG.ROUTE.MAGIC_KINGDOM:
-      if (CONFIG.ACTIVITY >= 4) {
+      if (ACTIVITY >= 4) {
         helpDetails = (
           <>
             <img className="banner" src={krabs} />
@@ -644,7 +645,7 @@ function renderHelpDetails(pathname : string) {
       }
       break;
     case CONFIG.ROUTE.ROOT:
-      if (CONFIG.ACTIVITY >= 5) {
+      if (ACTIVITY >= 5) {
         helpDetails = (
           <>
             <img className="banner" src={disneyFireworks} />
