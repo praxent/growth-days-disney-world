@@ -100,7 +100,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={squirtGunGame} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Squirt the targets at Fossil Fun Games <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Squirt the targets at Fossil Fun Games <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Get an image of the ride's target (if possible) and display it</li>
             <li>Use React's useState hook to to set a variable called shooting to true or false</li>
@@ -109,7 +109,7 @@ function renderHelpDetails(pathname : string) {
           <ul>
           </ul>
 
-          <h3>Task 2: Make the squirt gun a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Make the squirt gun a child component<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Refactor the squirt gun to be a child component of the Game component</li>
             <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
@@ -136,7 +136,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={rainforestCafe} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Get the menu of drinks available at the Rainforest Cafe<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Get the menu of drinks available at the Rainforest Cafe<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Display an image of the Rainforest Cafe at Disney's Animal Kingdom.</li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
@@ -144,7 +144,7 @@ function renderHelpDetails(pathname : string) {
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
           </ul>
 
-          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Include a UI element for "selling" each of the items returned from the API. If a user clicks on this element, utilize the useState "setter" to decrease that item's available quantity.</li>
             <li>Verify that the correct quantity of each item is displayed to the user, and if the quantity = 0, disable that item's "purchase" UI element.</li>
@@ -170,14 +170,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={zoo} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Walking around the Zoo <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Walking around the Zoo <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Make 4 buttons labelled "Visit Lion", "Visit Zebra", "Visit Giraffe", and "Visit Chimpanzee"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
             <li>Display an image of a Lion, a Zebra, a Giraffe, and a Chimpanzee inside the Outlet</li>
           </ul>
 
-          <h3>Task 2: Cage the Animals <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Cage the Animals <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Overlay a fence over the Outlet component so the animals don't escape.</li>
             <li>Find a sound clip online for each animal</li>
@@ -204,14 +204,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={summitPlummet} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Ride Summit Plummet at Blizzard Beach <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Ride Summit Plummet at Blizzard Beach <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Get an image of the slide from Google and display it on the page</li>
             <li>Use React's useState hook to to set a variable called riding to true or false</li>
             <li>When riding is true, there should be some visual indication, like a person moving down the slide.</li>
           </ul>
 
-          <h3>Task 2: Make the slide a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Make the slide a child component<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Refactor the slide to be a child component of the Park component</li>
             <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
@@ -238,7 +238,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={lottawattaLodge} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Get the menu of drinks available at the Lottawatta Lodge<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Get the menu of drinks available at the Lottawatta Lodge<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Display an image of the Lottawatta Lodge at Disney's Blizzard Beach.</li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
@@ -246,7 +246,7 @@ function renderHelpDetails(pathname : string) {
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
           </ul>
 
-          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Include a UI element for "selling" each of the items returned from the API. If a user clicks on this element, utilize the useState "setter" to decrease that item's available quantity.</li>
             <li>Verify that the correct quantity of each item is displayed to the user, and if the quantity = 0, disable that item's "purchase" UI element.</li>
@@ -272,14 +272,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={lifeguard} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Security Cameras <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Security Cameras <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Make 4 buttons labelled "Cross Country Creek", "Melt Away Bay", "Runoff Rapids", and "Snow Stormers"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
             <li>Display an image of Cross Country Creek, Melt Away Bay, Runoff Rapids, and Snow Stormers inside the Outlet</li>
           </ul>
 
-          <h3>Task 2: Monitor the Customers for Safety <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Monitor the Customers for Safety <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Overlay a security camera over the Outlet component so we can monitor customers to ensure their swimming safety</li>
             <li>Find a unique sound clip online that represents each of the water types (still water, running water, waterfall, rapids, etc.)</li>
@@ -306,14 +306,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={spaceshipEarth} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Ride Spaceship Earth at Epcot <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Ride Spaceship Earth at Epcot <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Get an image of the ride and display it on the page</li>
             <li>Use React's useState hook to to set a variable called riding to true or false</li>
             <li>When riding is true, there should be some visual indication, like the globe rotating.</li>
           </ul>
 
-          <h3>Task 2: Make the globe a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Make the globe a child component<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Refactor the globe to be a child component of the Park component</li>
             <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
@@ -340,7 +340,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={space220} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Get the menu of drinks available at the Space 220 Restaurant<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Get the menu of drinks available at the Space 220 Restaurant<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Display an image of the Space 220 Restaurant at Disney's Epcot Center.</li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
@@ -348,7 +348,7 @@ function renderHelpDetails(pathname : string) {
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
           </ul>
 
-          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Include a UI element for "selling" each of the items returned from the API. If a user clicks on this element, utilize the useState "setter" to decrease that item's available quantity.</li>
             <li>Verify that the correct quantity of each item is displayed to the user, and if the quantity = 0, disable that item's "purchase" UI element.</li>
@@ -374,14 +374,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={spaceshipWindow} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Universe of Energy <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Universe of Energy <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Make 4 buttons labelled "Visit Earth", "Visit Mars", "Visit Saturn", and "Visit Jupiter"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
             <li>Display an image of Planet Earth, Mars, Saturn, and Jupiter inside the Outlet</li>
           </ul>
 
-          <h3>Task 2: Space Exploration <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Space Exploration <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Overlay a space ship window over the Outlet component so we can look out the windows as we fly by</li>
             <li>Find a cool space sound clip online for each planet</li>
@@ -408,14 +408,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={boatRide} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Ride the Pirates of the Caribbean boat at Adventureland <span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Ride the Pirates of the Caribbean boat at Adventureland <span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Get an image of the ride's boat from Google and display it on the page</li>
             <li>use React's useState hook to to set a variable called riding to true or false</li>
             <li>When riding is true, there should be some visual indication, like moving the boat.</li>
           </ul>
 
-          <h3>Task 2: Make the ride a child component<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Make the ride a child component<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Refactor the ride to be a child component of the Park component</li>
             <li>Pass the two variables from the use state hooks (value and setter) to the child component as props</li>
@@ -442,7 +442,7 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={libertyTreeTavern} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Get the menu of drinks available at the Liberty Tree Tavern<span className="eta"><img className="clock" src={clock} /> 15 min</span></h3>
+          <h3>Task 1: Get the menu of drinks available at the Liberty Tree Tavern<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
           <ul>
             <li>Display an image of the Liberty Tree Tavern at Disney's Magic Kingdom.</li>
             <li>Make a GET call (could be as simple as using 'fetch') to the mock API in React's useEffect hook to receive the menu of drinks.</li>
@@ -450,7 +450,7 @@ function renderHelpDetails(pathname : string) {
             <li>Use React's useState hook to set the returned data as a state variable - should you have multiple separate useState declarations, or save everything in one useState array? Who knows!</li>
           </ul>
 
-          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 30 min</span></h3>
+          <h3>Task 2: Allow for the selling of different menu items<span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
           <ul>
             <li>Include a UI element for "selling" each of the items returned from the API. If a user clicks on this element, utilize the useState "setter" to decrease that item's available quantity.</li>
             <li>Verify that the correct quantity of each item is displayed to the user, and if the quantity = 0, disable that item's "purchase" UI element.</li>
@@ -476,14 +476,14 @@ function renderHelpDetails(pathname : string) {
           <img className="banner" src={hagrid} />
           <h2>Requirements</h2>
 
-          <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 25 min</span></h3>
+          <h3>Task 1: Magic Lessons <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Make 4 buttons labelled "Dark Spell", "Fire Spell", "Water Spell", and "Lightning Spell"</li>
             <li>Using React Router, which is already installed, make each button swap the view of a react router <pre>{"<Outlet>"}</pre> component.</li>
             <li>Display an image of Fire, Water, Lightning, and something "Dark Magic" inside the Outlet</li>
           </ul>
 
-          <h3>Task 2: Yer a Wizard, Harry <span className="eta"><img className="clock" src={clock} /> 20 min</span></h3>
+          <h3>Task 2: Yer a Wizard, Harry <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
           <ul>
             <li>Overlay a wand over the Outlet component so we can cast the spells</li>
             <li>Find a unique sound clip online that represents each of the spell types</li>
@@ -511,7 +511,7 @@ function renderHelpDetails(pathname : string) {
             <img className="banner" src={krabs} />
 
             <h2>Requirements</h2>
-            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 90 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
               <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/animal-kingdom/Wallet</pre></li>
@@ -546,7 +546,7 @@ function renderHelpDetails(pathname : string) {
             <img className="banner" src={krabs} />
 
             <h2>Requirements</h2>
-            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 90 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
               <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/blizzard-beach/Wallet</pre></li>
@@ -581,7 +581,7 @@ function renderHelpDetails(pathname : string) {
             <img className="banner" src={krabs} />
 
             <h2>Requirements</h2>
-            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 90 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
               <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/epcot/Wallet</pre></li>
@@ -616,7 +616,7 @@ function renderHelpDetails(pathname : string) {
             <img className="banner" src={krabs} />
 
             <h2>Requirements</h2>
-            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 45 min</span></h3>
+            <h3>Task 1: Wallet Higher Order Component <span className="eta"><img className="clock" src={clock} /> 90 min</span></h3>
             <ul>
               <li>All activities in Disney World require payment.</li>
               <li>Create a Higher Order Component, called <pre>{"<Wallet>"}</pre> in your park's home directory <pre>/src/magic-kingdom/Wallet</pre></li>
@@ -651,7 +651,7 @@ function renderHelpDetails(pathname : string) {
             <img className="banner" src={disneyFireworks} />
 
             <h2>Requirements</h2>
-            <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 60 minutes</span></h3>
+            <h3>Task 1: Customer Access Control <span className="eta"><img className="clock" src={clock} /> 90 min</span></h3>
             <ul>
               <li>Every park in all of Disney World needs to be child-proofed!</li>
               <li>
@@ -667,7 +667,7 @@ function renderHelpDetails(pathname : string) {
               <li>Congratulations, you've learned enough React to be a captain!</li>
             </ul>
 
-            <h3>Task 2: Park Updates <span className="eta"><img className="clock" src={clock} /> 30 minutes</span></h3>
+            <h3>Task 2: Park Updates <span className="eta"><img className="clock" src={clock} /> 60 min</span></h3>
             <ul>
               <li>
                 Once complete, each team member should use the new Context component to update their park's features to
