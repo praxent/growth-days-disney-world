@@ -1,7 +1,7 @@
 World Information
 =================
 
-World Number:
+World Number: 4
 
 Park:
 
