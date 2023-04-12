@@ -3,7 +3,7 @@ World Information
 
 World Number: 2
 
-Park:
+Park: Epcot
 
 Assignee:
 
