@@ -48,3 +48,35 @@ main
      |--- world4-epcot
      |--- world4-magic-kingdom
 ```
+
+Signup Procedure
+================
+Each person is assigned to a world and a park in the repo. Please go to your respective branch and update the README.md with your name:
+
+Example
+-------
+Bob is World 1 Animal Kingdom, so he would
+
+`git clone <repo_url>`
+
+`git checkout world1-animal-kingdom`
+
+change the README to
+```
+World Information
+=================
+
+World Number: 1
+
+Park: Magic Kingdom
+
+Assignee: Bob
+```
+
+Then,
+
+`git add .`
+
+`git commit -m "Added Bob"`
+
+`git push origin HEAD`
