@@ -3,7 +3,7 @@ World Information
 
 World Number: 1
 
-Park:
+Park: Magic Kingdom
 
 Assignee:
 
