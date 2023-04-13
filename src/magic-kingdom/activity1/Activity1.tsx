@@ -1,22 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import styled from "styled-components";
-
-const Styles = styled.div`
-  color: red;
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-`;
+import boatImg from "./images/boatpiratesofthecaribbean.webp";
+import pirateAudio from "./audio/PiratesAudio.mp3";
+import RideBoatComponent from './RideBoatComponent';
 
 function Activity1() {
+  const [audio] = useState(new Audio(pirateAudio));
+
+  const gifStyle = {
+    marginTop: "490px",
+    marginLeft: "620px"
+
+  };
+
+  const [rinding, setRinding] = useState(false);
+  const [buttonText, setButtonText] = useState('Lets Ride');
+
+  function handleClick() {
+    setButtonText(rinding ? 'Lets Ride' : 'Rinding');
+    setRinding(!rinding);
+    
+  }
+
+  useEffect(() => {
+    if (rinding) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }, [rinding]);
+
   return (
-    <Styles>
-      <div className="container">
-        Hello from Activity 1 Magic Kingdom
+    <>
+    <div style={{ 
+      backgroundImage: `url(${boatImg})`,
+      backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh'
+    }}>
+      <button onClick={handleClick}>{buttonText}</button>
+      <div style={gifStyle}>
+        <RideBoatComponent rinding={rinding}/>  
       </div>
-    </Styles>
+        
+      
+    </div>
+    </>
+    
+
   )
 }
 
