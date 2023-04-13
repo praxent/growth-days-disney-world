@@ -11,8 +11,8 @@ const Styles = styled.div`
 
   .globe {
     animation: ${({ riding }) => (riding ? spinAnimation : 'none')} 2s linear infinite;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 800px;
     background-image: ${({ riding }) =>
       // riding ? 'url(/spaceship-earth-ride.jpg)' : 'url(/spaceship-earth.jpg)'};
       riding ? 'url(https://i.imgur.com/UdUQeIM.gif)' : 'url(https://i2.wp.com/thekingdominsider.com/wp-content/uploads/2017/06/spaceship-earth-epcot.jpg?fit=1000%2C1247&ssl=1)'};
