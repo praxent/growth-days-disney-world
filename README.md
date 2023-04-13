@@ -5,7 +5,7 @@ World Number: 2
 
 Park: Blizzard Beach
 
-Assignee:
+Assignee: Mayra Tovar/Guerth Castro
 
 Build & Run
 ===========
