@@ -65,13 +65,6 @@ function BoatImage({position}: BoatProps) {
                 top: `${position.y}px`,
                 display: 'block',
             }}
-            // style={{
-            //     left: `${position.x}px`,
-            //     top: `${position.y}px`,
-            //     display: "block",
-            //     height: "500px",
-            //     width: "500px",
-            // }}
         />
     );
 }
@@ -100,12 +93,12 @@ const CenteredButton = styled.button`
 
 function Activity1() {
     const [boatPosition, setBoatPosition] = useState({x: -100, y: 100});
-    const [animationRunning, setAnimationRunning] = useState(false);
+    const [riding, setRiding] = useState(false);
 
     useEffect(() => {
         let intervalId: NodeJS.Timeout;
 
-        if (animationRunning) {
+        if (riding) {
             intervalId = setInterval(() => {
                 setBoatPosition(prevPosition => ({
                     x: prevPosition.x + 5,
@@ -123,26 +116,26 @@ function Activity1() {
         return () => {
             clearInterval(intervalId);
         };
-    }, [animationRunning, boatPosition]);
+    }, [riding, boatPosition]);
 
     const startAnimation = () => {
-        setAnimationRunning(false);
+        setRiding(false);
         setBoatPosition({x: -100, y: 100});
-        setAnimationRunning(true);
+        setRiding(true);
     };
 
     const stopAnimation = () => {
-        setAnimationRunning(false);
+        setRiding(false);
         setBoatPosition({x: -100, y: 100});
     };
 
     return (
         <Styles>
             <div className="fullscreen-image">
-                {animationRunning ? null : <FullscreenImage/>}
-                {animationRunning ? <BoatImage position={boatPosition}/> : null}
-                {animationRunning ? <GifAnimation/> : null}
-                {animationRunning ? null : <CenteredButton onClick={startAnimation}>Raise Sails</CenteredButton>}
+                {riding ? null : <FullscreenImage/>}
+                {riding ? <BoatImage position={boatPosition}/> : null}
+                {riding ? <GifAnimation/> : null}
+                {riding ? null : <CenteredButton onClick={startAnimation}>Raise Sails</CenteredButton>}
             </div>
         </Styles>
     );
