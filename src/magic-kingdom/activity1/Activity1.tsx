@@ -37,6 +37,16 @@ const Styles = styled.div`
     height: 500px;
     z-index: 0;
   }
+
+  .rain-gif-animation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1000px;
+    z-index: 0;
+  }
 `;
 
 function FullscreenImage() {
@@ -72,6 +82,13 @@ function BoatImage({position}: BoatProps) {
 function GifAnimation() {
     return (
         <img src="https://media.tenor.com/nWx0rD5cDD4AAAAC/ocen.gif" className="gif-animation"/>
+    );
+}
+
+function RainAnimation() {
+    return (
+        <img src="https://i.pinimg.com/originals/3a/43/55/3a4355ca3314170b516c494bdc534dfa.gif"
+             className="rain-gif-animation"/>
     );
 }
 
@@ -133,6 +150,7 @@ function Activity1() {
         <Styles>
             <div className="fullscreen-image">
                 {riding ? null : <FullscreenImage/>}
+                {riding ? <RainAnimation/> : null}
                 {riding ? <BoatImage position={boatPosition}/> : null}
                 {riding ? <GifAnimation/> : null}
                 {riding ? null : <CenteredButton onClick={startAnimation}>Raise Sails</CenteredButton>}
