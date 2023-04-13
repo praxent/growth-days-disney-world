@@ -1,23 +1,29 @@
-import React from 'react';
-import styled from "styled-components";
-
-const Styles = styled.div`
-  color: red;
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-`;
+import React, { useState, useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
+import BoatActivity1 from './BoatActivity1';
 
 function Activity1() {
+  const [isRiding, setIsRiding] = useState(false);
+
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [timerEnded, setTimerEnded] = useState(false);
+
   return (
-    <Styles>
-      <div className="container">
-        Hello from Activity 1 Magic Kingdom
+    <div>
+      <div style={{ marginTop: 50, marginBottom: 50, textAlign: 'center', fontSize: 24 }}>
+        Welcome to Pirates Of The Caribbean, are you ready for an insane
+        experience?
       </div>
-    </Styles>
-  )
+      <BoatActivity1
+        isRiding={isRiding}
+        setIsRiding={setIsRiding}
+        timerEnded={timerEnded}
+        setTimerEnded={setTimerEnded}
+        timeLeft={timeLeft}
+        setTimeLeft={setTimeLeft}
+      ></BoatActivity1>
+    </div>
+  );
 }
 
-export default Activity1
+export default Activity1;
