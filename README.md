@@ -5,7 +5,7 @@ World Number: 1
 
 Park: Epcot
 
-Assignee:
+Assignee: Cristian Pinto
 
 Build & Run
 ===========
