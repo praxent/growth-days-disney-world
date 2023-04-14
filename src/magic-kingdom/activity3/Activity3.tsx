@@ -102,13 +102,13 @@ const FullscreenImage = styled.img`
   height: 100vh;
 `;
 
-function Activity3({balance, updateBalance}: WalletProps) {
+function Activity3({balance, updateBalance, isChild, setIsChild}: WalletProps) {
     return (
-        <PageBody {...{balance, updateBalance}}/>
+        <PageBody {...{balance, updateBalance, isChild, setIsChild}}/>
     );
 }
 
-function PageBody({balance, updateBalance}: WalletProps) {
+function PageBody({balance, updateBalance, isChild, setIsChild}: WalletProps) {
     // @ts-ignore
     const handleClick = async (event) => {
 
@@ -136,6 +136,10 @@ function PageBody({balance, updateBalance}: WalletProps) {
                 break;
             }
             case "lightning spell": {
+                if (isChild) {
+                    alert("Children are not allowed to cast this spell!");
+                    return;
+                }
                 audio.src = lightningSpell;
                 break;
             }
@@ -146,6 +150,48 @@ function PageBody({balance, updateBalance}: WalletProps) {
 
     return (
         <div>
+            <button
+                onClick={() => setIsChild(false)}
+                style={{
+                    backgroundColor: '#614caf',
+                    border: 'none',
+                    color: 'white',
+                    padding: '10px',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontSize: '16px',
+                    margin: '4px 2px',
+                    cursor: 'pointer',
+                    position: 'absolute',
+                    top: 30,
+                    right: 130,
+                    zIndex: 2,
+                }}
+            >
+                I'm an adult
+            </button>
+            <button
+                onClick={() => setIsChild(true)}
+                style={{
+                    backgroundColor: '#008CBA',
+                    border: 'none',
+                    color: 'white',
+                    padding: '10px',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontSize: '16px',
+                    margin: '4px 2px',
+                    cursor: 'pointer',
+                    position: 'absolute',
+                    top: 30,
+                    right: 10,
+                    zIndex: 2,
+                }}
+            >
+                I'm a child
+            </button>
             <FullscreenImage
                 src="https://e0.pxfuel.com/wallpapers/29/160/desktop-wallpaper-harry-potter-christmas-tip-christmas-at-hogwarts.jpg"
                 alt="My pretty image"

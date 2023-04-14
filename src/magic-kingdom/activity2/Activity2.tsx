@@ -66,7 +66,7 @@ const Button = styled.button`
   margin-top: 10px;
 `;
 
-function Activity2({balance, updateBalance}: WalletProps) {
+function Activity2({balance, updateBalance, setIsChild, isChild}: WalletProps) {
     const [items, setItems] = useState([]);
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -123,17 +123,55 @@ function Activity2({balance, updateBalance}: WalletProps) {
                 <h1>Experience Comfort and Style!</h1>
                 <p>Explore our products that combine quality and aesthetics.</p>
                 <p>You currently have {balance.toString()} coins spend</p>
+                <button
+                    onClick={() => setIsChild(false)}
+                    style={{
+                        backgroundColor: '#614caf',
+                        border: 'none',
+                        color: 'white',
+                        padding: '10px',
+                        textAlign: 'center',
+                        textDecoration: 'none',
+                        display: 'inline-block',
+                        fontSize: '16px',
+                        margin: '4px 2px',
+                        cursor: 'pointer'
+                    }}
+                >
+                    I'm an adult
+                </button>
+                <button
+                    onClick={() => setIsChild(true)}
+                    style={{
+                        backgroundColor: '#008CBA',
+                        border: 'none',
+                        color: 'white',
+                        padding: '10px',
+                        textAlign: 'center',
+                        textDecoration: 'none',
+                        display: 'inline-block',
+                        fontSize: '16px',
+                        margin: '4px 2px',
+                        cursor: 'pointer'
+                    }}
+                >
+                    I'm a child
+                </button>
+
                 <ul>
                     {items.map(item => (
-                        <li key={item['id']}>
-                            <h1>{item['name']}</h1>
-                            <p>{item['description']}</p>
-                            <p>Type: {item['type']}</p>
-                            <p>Quantity: {item['quantity']}</p>
-                            <Button onClick={() => handleSell(item['id'])}>Sell</Button>
-                        </li>
+                        // @ts-ignore
+                        isChild && item['type'].toString().toLowerCase() === "adult" ? null : (
+                            <li key={item['id']}>
+                                <h1>{item['name']}</h1>
+                                <p>{item['description']}</p>
+                                <p>Quantity: {item['quantity']}</p>
+                                <Button onClick={() => handleSell(item['id'])}>Sell</Button>
+                            </li>
+                        )
                     ))}
                 </ul>
+
             </Content>
         </Background>
     );
