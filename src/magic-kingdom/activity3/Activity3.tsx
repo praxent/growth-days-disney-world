@@ -1,6 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// @ts-ignore
+import {Route, Switch} from "react-router";
+// @ts-ignore
+import darkSpell from "../activity3/DarkSpell.mp3";
+// @ts-ignore
+import fireSpell from "../activity3/FireSpell.mp3";
+// @ts-ignore
+import waterSpell from "../activity3/WaterSpell.mp3";
+// @ts-ignore
+import lightningSpell from "../activity3/LightningSpell.mp3";
+
+
 const Title = styled.h1`
   font-family: 'Harry Potter', cursive;
   font-size: 48px;
@@ -50,9 +62,38 @@ const FullscreenImage = styled.img`
 `;
 
 function Activity3() {
+    return (
+        <PageBody/>
+    );
+}
+
+function PageBody() {
     // @ts-ignore
-    const handleClick = (event) => {
-        console.log(`Button ${event.target.textContent} was clicked!`);
+    const handleClick = async (event) => {
+
+        const buttonName = event.target.textContent.toLowerCase();
+        const audio = new Audio();
+
+        switch (buttonName) {
+            case "dark spell": {
+                audio.src = darkSpell;
+                break;
+            }
+            case "fire spell": {
+                audio.src = fireSpell;
+                break;
+            }
+            case "water spell": {
+                audio.src = waterSpell;
+                break;
+            }
+            case "lightning spell": {
+                audio.src = lightningSpell;
+                break;
+            }
+        }
+
+        await audio.play();
     };
 
     return (
@@ -95,6 +136,50 @@ function Activity3() {
                     <Title>Lightning Spell</Title>
                 </div>
             </ButtonContainer>
+        </div>
+    );
+}
+
+function DarkSpell() {
+    return (
+        <div>
+            <FullscreenImage
+                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
+                alt="My pretty image"
+            />
+        </div>
+    );
+}
+
+function FireSpell() {
+    return (
+        <div>
+            <FullscreenImage
+                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
+                alt="My pretty image"
+            />
+        </div>
+    );
+}
+
+function LightningSpell() {
+    return (
+        <div>
+            <FullscreenImage
+                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
+                alt="My pretty image"
+            />
+        </div>
+    );
+}
+
+function WaterSpell() {
+    return (
+        <div>
+            <FullscreenImage
+                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
+                alt="My pretty image"
+            />
         </div>
     );
 }
