@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {ACTIVITY} from "../activity";
 import animalKingdom from "./images/animal-kingdom.jpg";
 import {Link} from "react-router-dom";
@@ -23,6 +23,7 @@ const Styles = styled.div`
 `;
 
 function AnimalKingdom() {
+  
   return (
     <Styles className="park animal-kingdom flex-column">
       <div className="flex-row">
