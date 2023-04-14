@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import Globe from "./Globe"
+import withWallet from '../withWallet'
 
 const Styles = styled.div`
   color: red;
@@ -33,16 +34,16 @@ const Styles = styled.div`
   }
 `;
 
-function Activity1() {
+function Activity1({ handleBalance, isDisabled }) {
   const [riding, setRiding] = useState(false);
   return (
     <Styles>
       <div className="container">
         Hello from Activity 1 Epcot
       </div>
-      <Globe riding={riding} setRiding={setRiding} />
+      <Globe riding={riding} setRiding={setRiding} handleBalance={handleBalance} isDisabled={isDisabled} />
     </Styles>
   )
 }
 
-export default Activity1
+export default withWallet(Activity1)

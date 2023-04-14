@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
+import withWallet from '../withWallet'
 
 const Styles = styled.div`
   color: blue;
@@ -46,11 +47,12 @@ const Styles = styled.div`
   }
 `;
 
-function Activity2() {
+function Activity2({ handleBalance, isDisabled }) {
   const [menuOfDrinks, setMenuOfDrinks] = useState([]);
 
   const handlePurchase = (item) => {
     const updatedMenu = menuOfDrinks.map((menuItem) => {
+      handleBalance()
       if (menuItem.id === item.id && item.quantity > 0) {
         return { ...menuItem, quantity: item.quantity - 1 }
       }
@@ -95,7 +97,7 @@ function Activity2() {
                 <p>{description}</p>
                 <div className='menu-description'>{type}</div>
                 <div>{quantity}</div>
-                <button className='menu-button' disabled={quantity === 0} onClick={() => handlePurchase(item)}>Purchase</button>
+                <button className='menu-button' disabled={quantity === 0 | isDisabled} onClick={() => handlePurchase(item)}>Purchase</button>
               </div>
             )
           })}
@@ -105,4 +107,4 @@ function Activity2() {
   )
 }
 
-export default Activity2
+export default withWallet(Activity2)

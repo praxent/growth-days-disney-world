@@ -5,6 +5,7 @@ import earthAudio from './assets/audio/earthAudio.mp3'
 import marsAudio from './assets/audio/marsAudio.mp3'
 import jupiterAudio from './assets/audio/jupiterAudio.mp3'
 import saturnAudio from './assets/audio/saturnAudio.mp3'
+import withWallet from '../withWallet'
 
 const Styles = styled.div`
   color: green;
@@ -20,7 +21,7 @@ const Styles = styled.div`
   }
 `;
 
-function Activity3() {
+function Activity3({ handleBalance, isDisabled }) {
   const listenEarth = new Audio(earthAudio);
   const listenMars = new Audio(marsAudio);
   const listenJupiter = new Audio(jupiterAudio);
@@ -37,6 +38,7 @@ function Activity3() {
   const playAudio = (audio) => {
     resetAudios();
     audio.play();
+    handleBalance()
   };
   return (
     <Styles>
@@ -52,23 +54,29 @@ function Activity3() {
         </Route>
       </Routes>
       <nav>
-        <ul>
-          <li>
-            <Link to="earth" onClick={() => playAudio(listenEarth)}>Visit Earth</Link>
-          </li>
-          <li>
-            <Link to="mars" onClick={() => playAudio(listenMars)}>Visit Mars</Link>
-          </li>
-          <li>
-            <Link to="jupiter" onClick={() => playAudio(listenJupiter)}>Visit Jupiter</Link>
-          </li>
-          <li>
-            <Link to="saturn" onClick={() => playAudio(listenSaturn)}>Visit Saturn</Link>
-          </li>
-        </ul>
+        <button disabled={isDisabled}>
+          <Link to="earth" onClick={() =>
+            playAudio(listenEarth)
+          }>Visit Earth</Link>
+        </button>
+        <button disabled={isDisabled}>
+          <Link to="mars" onClick={() =>
+            playAudio(listenMars)
+          }>Visit Mars</Link>
+        </button>
+        <button disabled={isDisabled}>
+          <Link to="jupiter" onClick={() =>
+            playAudio(listenJupiter)
+          }>Visit Jupiter</Link>
+        </button   >
+        <button disabled={isDisabled}>
+          <Link to="saturn" onClick={() =>
+            playAudio(listenSaturn)
+          }>Visit Saturn</Link>
+        </button>
       </nav>
     </Styles>
   )
 }
 
-export default Activity3
+export default withWallet(Activity3)
