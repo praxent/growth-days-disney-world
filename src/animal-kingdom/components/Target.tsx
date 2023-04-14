@@ -1,7 +1,7 @@
 import { RandomTarget } from "../activity1/RandomTarget";
 import React from "react";
-import targetImage from "../src/target.png";
-import waterSplash from "../src/water_splash.png";
+import targetImage from "../media/target.png";
+import waterSplash from "../media/water_splash.png";
 
 const Target = (props: {
     setNewPosition: React.Dispatch<React.SetStateAction<RandomTarget>>;

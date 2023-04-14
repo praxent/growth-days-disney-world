@@ -1,8 +1,8 @@
 import '../AnimalKingdom.css';
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
-import fossilFun from "../src/fossil-fun.png";
-import waterSound from "../src/water-filled.mp3";
+import fossilFun from "../media/fossil-fun.png";
+import waterSound from "../media/water-filled.mp3";
 import { RandomTarget } from './RandomTarget';
 import { SquirtGun } from '../components/SquirtGun';
 
