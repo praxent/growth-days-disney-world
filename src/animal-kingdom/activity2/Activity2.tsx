@@ -1,7 +1,7 @@
 import '../AnimalKingdom.css';
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
-import rainForrestCafe from "../media/rain-forrest-cafe.png";
+import rainForrestCafe from "../src/rain-forrest-cafe.png";
 import { Drink } from './Drink';
 
 const Styles = styled.div`
