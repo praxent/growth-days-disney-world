@@ -140,48 +140,4 @@ function PageBody() {
     );
 }
 
-function DarkSpell() {
-    return (
-        <div>
-            <FullscreenImage
-                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
-                alt="My pretty image"
-            />
-        </div>
-    );
-}
-
-function FireSpell() {
-    return (
-        <div>
-            <FullscreenImage
-                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
-                alt="My pretty image"
-            />
-        </div>
-    );
-}
-
-function LightningSpell() {
-    return (
-        <div>
-            <FullscreenImage
-                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
-                alt="My pretty image"
-            />
-        </div>
-    );
-}
-
-function WaterSpell() {
-    return (
-        <div>
-            <FullscreenImage
-                src="https://i.pinimg.com/originals/7d/4f/8f/7d4f8f7a2b6a1c2e1b4d4b7f4f4f8a4a.jpg"
-                alt="My pretty image"
-            />
-        </div>
-    );
-}
-
 export default Activity3;
