@@ -9,6 +9,7 @@ import Waves from "./sounds/waves.mp3";
 import CannonBall from "./sounds/cannonball.mp3";
 import Draining from "./sounds/draining.mp3";
 import Crickets from "./sounds/crickets.mp3";
+import {UserContext} from '../../../captain-only/context';
 
 const Styles = styled.div`
   color: green;
@@ -17,7 +18,11 @@ const Styles = styled.div`
     max-width: 900px;
     margin: 0 auto;
   }
+  .visible {
+    display: none;
+  }
 `;
+
 
 function CrossCountryCreek() {
  
@@ -68,16 +73,21 @@ function SnowStormers() {
 function Activity3() {
   const initialValue = { id: 0, name: "", description:"", type:"", quantity:0 };
   const [menu, setMenu] = useState([initialValue]);
+  const context = useContext(UserContext);
+  const {store} = context;
+  const {userType} = store;
+  console.log(userType);
 
   return (
     <Styles>
 
       <h1>Cameras</h1>
-      <div className=".container">
+      <h1 className={userType === 'Adult' ? 'visible' : ''}>Only for adults!</h1>
+      <div className={userType === 'Child' ? 'visible' : ".container"}>
         <div className="map-container3">
           <div className='crossCountryCreek'>
             <Link to="crossCountryCreek" className=''> 
-            <button type="button" className='btn ' onClick={() => playSound(Waves)} >
+            <button type="button" className='btn' onClick={() => playSound(Waves)} >
               Cross Country Creek
             </button></Link>{" "}
           </div>
