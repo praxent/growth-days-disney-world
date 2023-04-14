@@ -155,7 +155,7 @@ function PageBody({balance, updateBalance}: WalletProps) {
             </TextContainer>
 
             <TextContainer2>
-                <SubTitle>You still have {balance} to spend</SubTitle>
+                <SubTitle>You have {balance} to spend</SubTitle>
             </TextContainer2>
 
             <ButtonContainer>
