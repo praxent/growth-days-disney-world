@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Wallet from '../Wallet';
 import image from './images/spaceship_earth_epcot.jpg';
 
 const Styles = styled.div`
@@ -77,6 +78,7 @@ function RotationMessage({ status }) {
 function Activity1() {
   return (
     <Styles>
+      <Wallet spendCredit={1}/>
       <div className="container">
         <RotationMessage status={false}/>
       </div>
