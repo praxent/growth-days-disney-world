@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Wallet, { WalletProps } from '../Wallet';
+import { UserContextProps, UserContext } from '../../../captain-only/App';
 
 const Styles = styled.div`
   .container {
@@ -96,11 +97,7 @@ interface Drinks {
 function Activity2(props: WalletProps) {
   const [drinks, setDrinks] = React.useState<Drinks[]>();
 
-  const [age, setAge] = React.useState('');
-
-  function handleAgeChange(event: any) {
-    setAge(event.target.value);
-  }
+  const userProps: UserContextProps = React.useContext(UserContext);
 
   useEffect(() => {
     const fetchDrinks = async () => {
@@ -112,7 +109,7 @@ function Activity2(props: WalletProps) {
   }, []);
 
   function handleDrinkClick(drink: Drinks): void {
-    if (drink.type == 'Adult' && age != '21+') {
+    if (drink.type == 'Adult' && userProps.isAdult == false) {
       window.alert("Hmmm... You can't drink that child");
       return;
     }
@@ -122,7 +119,7 @@ function Activity2(props: WalletProps) {
     const index = newDrinks.findIndex((d) => d.id === drink.id);
 
     newDrinks[index].quantity -= 1;
-
+    props.updateBalanceValue(props.balance - 1);
     setDrinks(newDrinks);
   }
 
@@ -144,18 +141,6 @@ function Activity2(props: WalletProps) {
         <div className="container">
           <div className="drink-list">
             <h1>Drinks for Sale</h1>
-            <label>Select your age:</label>
-            <select
-              id="age"
-              name="age"
-              onChange={handleAgeChange}
-              defaultValue={'under21'}
-              style={{ marginBottom: 40 }}
-            >
-              <option value="">--Select your age--</option>
-              <option value="under21">Under 21</option>
-              <option value="21+">21+</option>
-            </select>
             <ul>
               {drinks?.map((drink, index) => (
                 <li
@@ -163,8 +148,7 @@ function Activity2(props: WalletProps) {
                   onClick={() => {
                     if (props.balance != 0) {
                       if (drink.quantity != 0) {
-                        handleDrinkClick(drink),
-                          props.updateBalanceValue(props.balance - 1);
+                        handleDrinkClick(drink);
                         return;
                       }
                       window.alert('Out of stock');

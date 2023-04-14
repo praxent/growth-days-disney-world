@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { CONFIG } from '../../../captain-only/config';
 import Wallet, { WalletProps } from '../Wallet';
+import { UserContextProps, UserContext } from '../../../captain-only/App';
 
 const Styles = styled.div`
   color: green;
@@ -67,6 +68,7 @@ const Styles = styled.div`
 `;
 
 function Activity3(props: WalletProps) {
+  const userProps: UserContextProps = React.useContext(UserContext);
   return (
     <Styles>
       <div className="container">
@@ -116,7 +118,16 @@ function Activity3(props: WalletProps) {
           </Link>
           <Link
             to={'lightning-spell'}
-            onClick={() => props.updateBalanceValue(props.balance - 1)}
+            onClick={(event) => {
+              if (userProps.isAdult) {
+                props.updateBalanceValue(props.balance - 1);
+                return;
+              }
+
+              event.preventDefault();
+
+              window.alert("You can't do that child");
+            }}
           >
             <button id="lightning-spell-btn">Lightning Spell</button>
           </Link>
