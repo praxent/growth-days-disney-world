@@ -10,7 +10,7 @@ const withWallet = <P extends object>(
 ) => {
     return class extends Component<P> {
         state = {
-            balance: 25
+            balance: 20
         };
 
         setBalance = (newBalance: number) => {
