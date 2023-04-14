@@ -2,6 +2,28 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 // @ts-ignore
 import boatImage from './Pirate-Boat-Image.png';
+import withWallet, {WalletProps} from "../wallet";
+
+
+const Title = styled.h1`
+  font-family: 'Harry Potter', cursive;
+  font-size: 48px;
+  color: #F5E5AB;
+  text-shadow: 2px 2px 0px #000;
+  margin: 0;
+  text-align: center;
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+`;
 
 const Styles = styled.div`
 
@@ -108,7 +130,8 @@ const CenteredButton = styled.button`
   transform: translate(-50%, -50%);
 `;
 
-function Activity1() {
+// @ts-ignore
+function Activity1({balance, updateBalance}: WalletProps) {
     const [boatPosition, setBoatPosition] = useState({x: -100, y: 100});
     const [riding, setRiding] = useState(false);
 
@@ -136,6 +159,11 @@ function Activity1() {
     }, [riding, boatPosition]);
 
     const startAnimation = () => {
+        if (balance < 1) {
+            alert('Ooopps, looks like you spend all of your coins already! You cannot ride without paying!');
+            return;
+        }
+        updateBalance(balance - 1);
         setRiding(false);
         setBoatPosition({x: -100, y: 100});
         setRiding(true);
@@ -149,6 +177,9 @@ function Activity1() {
     return (
         <Styles>
             <div className="fullscreen-image">
+                {riding ? null : <TextContainer>
+                    <Title>Coins {balance}</Title>
+                </TextContainer>}
                 {riding ? null : <FullscreenImage/>}
                 {riding ? <RainAnimation/> : null}
                 {riding ? <BoatImage position={boatPosition}/> : null}
@@ -159,4 +190,4 @@ function Activity1() {
     );
 }
 
-export default Activity1;
+export default withWallet(Activity1);

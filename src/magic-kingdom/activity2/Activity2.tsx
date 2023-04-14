@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
+import withWallet, {WalletProps} from "../wallet";
 
 
 const images = [
@@ -65,7 +66,7 @@ const Button = styled.button`
   margin-top: 10px;
 `;
 
-function Activity2() {
+function Activity2({balance, updateBalance}: WalletProps) {
     const [items, setItems] = useState([]);
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -99,6 +100,13 @@ function Activity2() {
     }, []);
 
     const handleSell = (id: any) => {
+        if (balance < 1) {
+            alert('You do not have enough money to buy this item!');
+            return;
+        }
+
+        updateBalance(balance - 1);
+
         setItems(items.map(item => {
             if (item['id'] === id && item['quantity'] > 0) {
                 item['quantity']--;
@@ -114,6 +122,7 @@ function Activity2() {
             <Content>
                 <h1>Experience Comfort and Style!</h1>
                 <p>Explore our products that combine quality and aesthetics.</p>
+                <p>You currently have {balance.toString()} coins spend</p>
                 <ul>
                     {items.map(item => (
                         <li key={item['id']}>
@@ -130,4 +139,4 @@ function Activity2() {
     );
 }
 
-export default Activity2;
+export default withWallet(Activity2);

@@ -11,11 +11,52 @@ import fireSpell from "../activity3/FireSpell.mp3";
 import waterSpell from "../activity3/WaterSpell.mp3";
 // @ts-ignore
 import lightningSpell from "../activity3/LightningSpell.mp3";
+import withWallet, {WalletProps} from "../wallet";
 
 
 const Title = styled.h1`
   font-family: 'Harry Potter', cursive;
   font-size: 48px;
+  color: #F5E5AB;
+  text-shadow: 2px 2px 0px #000;
+  margin: 0;
+  text-align: center;
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+`;
+
+const SubTitle = styled.h2`
+  font-family: 'Harry Potter', cursive;
+  font-size: 20px;
+  color: #F5E5AB;
+  text-shadow: 2px 2px 0px #000;
+  margin: 0;
+  text-align: center;
+`;
+
+const TextContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+`;
+
+const Text = styled.h2`
+  font-family: 'Harry Potter', cursive;
+  font-size: 36px;
   color: #F5E5AB;
   text-shadow: 2px 2px 0px #000;
   margin: 0;
@@ -61,15 +102,22 @@ const FullscreenImage = styled.img`
   height: 100vh;
 `;
 
-function Activity3() {
+function Activity3({balance, updateBalance}: WalletProps) {
     return (
-        <PageBody/>
+        <PageBody {...{balance, updateBalance}}/>
     );
 }
 
-function PageBody() {
+function PageBody({balance, updateBalance}: WalletProps) {
     // @ts-ignore
     const handleClick = async (event) => {
+
+        if (balance <= 0) {
+            alert("You don't have enough money to cast a spell!");
+            return;
+        }
+
+        updateBalance(balance - 1);
 
         const buttonName = event.target.textContent.toLowerCase();
         const audio = new Audio();
@@ -102,6 +150,13 @@ function PageBody() {
                 src="https://e0.pxfuel.com/wallpapers/29/160/desktop-wallpaper-harry-potter-christmas-tip-christmas-at-hogwarts.jpg"
                 alt="My pretty image"
             />
+            <TextContainer>
+                <Text>Select a spell to cast</Text>
+            </TextContainer>
+
+            <TextContainer2>
+                <SubTitle>You still have {balance} to spend</SubTitle>
+            </TextContainer2>
 
             <ButtonContainer>
                 <div
@@ -140,4 +195,4 @@ function PageBody() {
     );
 }
 
-export default Activity3;
+export default withWallet(Activity3);
