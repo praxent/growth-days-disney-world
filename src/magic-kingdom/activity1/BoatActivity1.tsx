@@ -63,6 +63,8 @@ const Styles = styled.div`
 `;
 
 function BoatActivity1(props: {
+  handleBalance: () => void;
+  balance: number;
   isRiding: boolean;
   setIsRiding: React.Dispatch<React.SetStateAction<boolean>>;
   timerEnded: boolean;
@@ -91,15 +93,23 @@ function BoatActivity1(props: {
   }, [props.timerEnded]);
 
   const handleClick = () => {
-    props.setIsRiding(true);
-    props.setTimeLeft(7);
-    props.setTimerEnded(false);
+    if (props.balance != 0) {
+      props.setIsRiding(true);
+      props.setTimeLeft(7);
+      props.setTimerEnded(false);
+      props.handleBalance();
+    }
   };
 
   return (
     <Styles>
       <div className="container" style={{ height: 800 }}>
-        <button onClick={() => handleClick()} style={{ position: 'absolute' }}>
+        <button
+          onClick={() => {
+            handleClick();
+          }}
+          style={{ position: 'absolute' }}
+        >
           {props.isRiding ? 'Riding...' : 'Start Riding'}
         </button>
         <div>

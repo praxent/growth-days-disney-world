@@ -3,6 +3,7 @@ import { Outlet, Route, Routes } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { CONFIG } from '../../../captain-only/config';
+import Wallet, { WalletProps } from '../Wallet';
 
 const Styles = styled.div`
   color: green;
@@ -65,7 +66,7 @@ const Styles = styled.div`
   }
 `;
 
-function Activity3() {
+function Activity3(props: WalletProps) {
   return (
     <Styles>
       <div className="container">
@@ -90,15 +91,33 @@ function Activity3() {
           }}
         >
           <Link to={'dark-spell'}>
-            <button id="dark-spell-btn">Dark Spell </button>
+            <button
+              id="dark-spell-btn"
+              onClick={() => props.updateBalanceValue(props.balance - 1)}
+            >
+              Dark Spell{' '}
+            </button>
           </Link>
           <Link to={'fire-spell'}>
-            <button id="fire-spell-btn">Fire Spell</button>
+            <button
+              id="fire-spell-btn"
+              onClick={() => props.updateBalanceValue(props.balance - 1)}
+            >
+              Fire Spell
+            </button>
           </Link>
           <Link to={'water-spell'}>
-            <button id="water-spell-btn">Water Spell</button>
+            <button
+              id="water-spell-btn"
+              onClick={() => props.updateBalanceValue(props.balance - 1)}
+            >
+              Water Spell
+            </button>
           </Link>
-          <Link to={'lightning-spell'}>
+          <Link
+            to={'lightning-spell'}
+            onClick={() => props.updateBalanceValue(props.balance - 1)}
+          >
             <button id="lightning-spell-btn">Lightning Spell</button>
           </Link>
         </div>
@@ -111,4 +130,4 @@ function Activity3() {
   );
 }
 
-export default Activity3;
+export default Wallet(Activity3);

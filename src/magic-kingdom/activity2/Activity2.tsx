@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Wallet, { WalletProps } from '../Wallet';
 
 const Styles = styled.div`
   .container {
@@ -92,7 +93,7 @@ interface Drinks {
   quantity: number;
 }
 
-function Activity2() {
+function Activity2(props: WalletProps) {
   const [drinks, setDrinks] = React.useState<Drinks[]>();
 
   const [age, setAge] = React.useState('');
@@ -127,56 +128,66 @@ function Activity2() {
 
   return (
     <Styles>
-      <div
-        style={{
-          marginTop: 50,
-          marginBottom: 50,
-          textAlign: 'center',
-          fontSize: 24,
-          color: 'black',
-        }}
-      >
-        Welcome to Liberty Tree Tavern, are you ready for some drinks?
-      </div>
-      <div className="container">
-        <div className="drink-list">
-          <h1>Drinks for Sale</h1>
-          <label>Select your age:</label>
-          <select
-            id="age"
-            name="age"
-            onChange={handleAgeChange}
-            defaultValue={'under21'}
-            style={{ marginBottom: 40 }}
-          >
-            <option value="">--Select your age--</option>
-            <option value="under21">Under 21</option>
-            <option value="21+">21+</option>
-          </select>
-          <ul>
-            {drinks?.map((drink, index) => (
-              <li
-                key={index}
-                onClick={() =>
-                  drink.quantity != 0 ? handleDrinkClick(drink) : window.alert('Out of stock')
-                }
-              >
-                <span className="drink-name">{drink.name} </span>
-                <span className="drink-info">
-                  ({drink.type}) - {drink.quantity} available
-                </span>
-                <ul></ul>
-                <span className="drink-info">{drink.description}</span>
-                <button className="button" disabled={drink.quantity === 0}>
-                  {drink.quantity != 0 ? 'Sell' : 'Out of Stock'}
-                </button>
-              </li>
-            ))}
-          </ul>
+      <div>
+        <p style={{ color: 'black' }}>Wallet balance: {props.balance}</p>
+        <div
+          style={{
+            marginTop: 50,
+            marginBottom: 50,
+            textAlign: 'center',
+            fontSize: 24,
+            color: 'black',
+          }}
+        >
+          Welcome to Liberty Tree Tavern, are you ready for some drinks?
+        </div>
+        <div className="container">
+          <div className="drink-list">
+            <h1>Drinks for Sale</h1>
+            <label>Select your age:</label>
+            <select
+              id="age"
+              name="age"
+              onChange={handleAgeChange}
+              defaultValue={'under21'}
+              style={{ marginBottom: 40 }}
+            >
+              <option value="">--Select your age--</option>
+              <option value="under21">Under 21</option>
+              <option value="21+">21+</option>
+            </select>
+            <ul>
+              {drinks?.map((drink, index) => (
+                <li
+                  key={index}
+                  onClick={() => {
+                    if (props.balance != 0) {
+                      if (drink.quantity != 0) {
+                        handleDrinkClick(drink),
+                          props.updateBalanceValue(props.balance - 1);
+                        return;
+                      }
+                      window.alert('Out of stock');
+                    }
+                  }}
+                >
+                  <span className="drink-name">{drink.name} </span>
+                  <span className="drink-info">
+                    ({drink.type}) - {drink.quantity} available
+                  </span>
+                  <ul></ul>
+                  <span className="drink-info">{drink.description}</span>
+                  <button className="button" disabled={drink.quantity === 0}>
+                    {drink.quantity != 0 ? 'Sell' : 'Out of Stock'}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </Styles>
   );
 }
 
-export default Activity2;
+export default Wallet(Activity2);
