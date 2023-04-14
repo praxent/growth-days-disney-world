@@ -1,10 +1,11 @@
-import '../AnimalKingdom.css';
-import React, { useEffect, useState } from 'react';
+import './Activity1.css';
+import React, { Children, ReactChildren, ReactElement, useEffect, useState } from 'react';
 import styled from "styled-components";
 import fossilFun from "../src/fossil-fun.png";
+import targetImage from "../src/target.png";
+import waterSplash from "../src/water_splash.png";
 import waterSound from "../src/water-filled.mp3";
 import { RandomTarget } from './RandomTarget';
-import { SquirtGun } from '../components/SquirtGun';
 
 const waterAudio = new Audio(waterSound);
 
@@ -17,12 +18,84 @@ const Styles = styled.div`
   };
 `;
 
+const SquirtGun = (props: {
+  setNewPosition: React.Dispatch<React.SetStateAction<RandomTarget>>;
+  target: RandomTarget;
+  point: Boolean;
+  setPoint: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  return (
+    <TargetArea width={props.target.screenWidth} height={props.target.screenHeight}>
+        <Target
+          target={props.target}
+          setNewPosition={props.setNewPosition}
+          point={props.point}
+          setPoint={props.setPoint} />
+      </TargetArea>
+  )
+}
+
+const TargetArea = (props: {
+  children: ReactElement;
+  width: number,
+  height: number
+}) => {
+  return (
+    <div style={{
+      width: props.width,
+      height: props.height }}>
+        {props.children}
+    </div>
+  )
+}
+
+const Target = (props: {
+  setNewPosition: React.Dispatch<React.SetStateAction<RandomTarget>>;
+  target: RandomTarget;
+  point: Boolean;
+  setPoint: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const hitTheTarget = () => {
+    props.setPoint(true)
+    waterAudio.play();
+    setTimeout(() => {
+      props.setPoint(false)
+      waterAudio.pause();
+      props.setNewPosition(
+        new RandomTarget(
+          props.target.screenWidth,
+          props.target.screenHeight,
+          props.target.targetSize
+        ))
+    }, 1000)
+  }
+
+  return (
+    <div id="container"
+      onClick={hitTheTarget}
+      style={{
+        marginLeft: `${props.target.xPosition}px`,
+        marginTop: `${props.target.yPosition}px`,
+        zIndex: 300 }}>
+      <div id="navi">
+        <img src={targetImage}
+          height= {props.target.targetSize}
+          width= {props.target.targetSize} />
+      </div>
+      <div id="infoi">
+        <img src = {waterSplash}
+          height = { props.point ? props.target.targetSize : "0px" }
+          width = { props.point ? props.target.targetSize : "0px" } />
+      </div>
+    </div>
+  )
+}
+
 function Activity1() {
   useEffect(() => {
     document.body.style.backgroundImage = `url('${fossilFun}')`
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPosition = 'center';
-    point ? waterAudio.play() : waterAudio.pause();
   })
 
   const screenWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
