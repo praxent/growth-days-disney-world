@@ -56,10 +56,10 @@ function Activity3() {
         <AnimalSelector animal={new Animal("Giraffe", giraffeImg, giraffeSound)} changeAnimal={changeAnimal} />
         <AnimalSelector animal={new Animal("Chimpanzee", monkeyImg, monkeySound)} changeAnimal={changeAnimal} />
         <img src={animal.img} style={{
-          width: '400px',
-          height: '400px',
-          marginTop: '50px',
-          visibility: `${animal.img == '' ? 'hidden' : 'visible'}`
+          backgroundColor: 'green',
+          width: '200px',
+          height: '200px',
+          marginTop: '50px'
         }} />
       </div>
     </Styles>
