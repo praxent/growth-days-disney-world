@@ -10,10 +10,11 @@ const withWallet = <P extends object>(
 ) => {
     return class extends Component<P> {
         state = {
-            balance: 20
+            balance: Number(localStorage.getItem('walletBalance')) || 20
         };
 
         setBalance = (newBalance: number) => {
+            localStorage.setItem('walletBalance', String(newBalance));
             this.setState({ balance: newBalance });
         };
 
