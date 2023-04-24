@@ -3,6 +3,10 @@ World Information
 
 World Number: 2
 
+Park: Blizzard Beach
+
+Assignee: Mayra Tovar/Guerth Castro
+
 Park: Animal Kingdom
 
 Assignee: Isabela Lima
