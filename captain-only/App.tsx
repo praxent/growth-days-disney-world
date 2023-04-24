@@ -1,30 +1,6 @@
-import './App.css'
-import * as React from "react";
-import {Route, Routes} from "react-router-dom";
-
-import Instructions from "./Instructions";
-import DisneyWorld from "./DisneyWorld";
-import {CONFIG} from "./config";
-
-import AnimalKingdom from ".//AnimalKingdom";
-import {default as AnimalKingdomActivity1} from "../src/animal-kingdom/activity1/Activity1";
-import {default as AnimalKingdomActivity2} from "../src/animal-kingdom/activity2/Activity2";
-import {default as AnimalKingdomActivity3} from "../src/animal-kingdom/activity3/Activity3";
-
-import BlizzardBeach from ".//BlizzardBeach";
-import {default as BlizzardBeachActivity1} from "../src/blizzard-beach/activity1/Activity1";
-import {default as BlizzardBeachActivity2} from "../src/blizzard-beach/activity2/Activity2";
-import {default as BlizzardBeachActivity3} from "../src/blizzard-beach/activity3/Activity3";
-
-import Epcot from ".//Epcot";
-import {default as EpcotActivity1} from "../src/epcot/activity1/Activity1";
-import {default as EpcotActivity2} from "../src/epcot/activity2/Activity2";
-import {default as EpcotActivity3} from "../src/epcot/activity3/Activity3";
-
-import MagicKingdom from ".//MagicKingdom";
-import {default as MagicKingdomActivity1} from "../src/magic-kingdom/activity1/Activity1";
-import {default as MagicKingdomActivity2} from "../src/magic-kingdom/activity2/Activity2";
-import {default as MagicKingdomActivity3} from "../src/magic-kingdom/activity3/Activity3";
+import './App.css';
+import * as React from 'react';
+import AppBody from './App-Body';
 
 import Earth from '../src/epcot/activity3/Earth';
 import Jupiter from '../src/epcot/activity3/Jupiter';
@@ -33,10 +9,31 @@ import Mars from '../src/epcot/activity3/Mars';
 
 import UserToogle from './UserToggle';
 
-function App() {
+export interface UserContextProps {
+  setIsAdult: React.Dispatch<React.SetStateAction<boolean>>;
+  isAdult: boolean;
+}
+
+export const UserContext = React.createContext<UserContextProps>({
+  setIsAdult: () => {
+    console.log('setIsAdult');
+  },
+  isAdult: false,
+});
+
+export const UserProvider: React.FC = ({ children }) => {
+  const [isAdult, setIsAdult] = React.useState(false);
 
   return (
-    <>
+    <UserContext.Provider value={{ isAdult, setIsAdult }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
+
+function App() {
+  return (
+    <UserProvider>
       <Instructions />
       <UserToogle />
       <Routes>
@@ -70,8 +67,8 @@ function App() {
 
 
       </Routes>
-    </>
+    </UserProvider>
   )
 }
 
-export default App
+export default App;

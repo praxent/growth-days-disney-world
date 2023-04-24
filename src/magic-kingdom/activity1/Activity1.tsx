@@ -1,23 +1,43 @@
-import React from 'react';
-import styled from "styled-components";
+import React, { useState, useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
+import BoatActivity1 from './BoatActivity1';
+import Wallet, { WalletProps } from '../Wallet';
 
-const Styles = styled.div`
-  color: red;
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-`;
+function Activity1(props: WalletProps) {
+  const [isRiding, setIsRiding] = useState(false);
 
-function Activity1() {
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [timerEnded, setTimerEnded] = useState(false);
+
   return (
-    <Styles>
-      <div className="container">
-        Hello from Activity 1 Magic Kingdom
+    <div>
+      <div
+        style={{
+          marginTop: 50,
+          marginBottom: 50,
+          textAlign: 'center',
+          fontSize: 24,
+        }}
+      >
+        Welcome to Pirates Of The Caribbean, are you ready for an insane
+        experience?
       </div>
-    </Styles>
-  )
+      <div>
+        <p>Wallet balance: {props.balance}</p>
+
+        <BoatActivity1
+          handleBalance={() => props.updateBalanceValue(props.balance - 1)}
+          balance={props.balance}
+          isRiding={isRiding}
+          setIsRiding={setIsRiding}
+          timerEnded={timerEnded}
+          setTimerEnded={setTimerEnded}
+          timeLeft={timeLeft}
+          setTimeLeft={setTimeLeft}
+        ></BoatActivity1>
+      </div>
+    </div>
+  );
 }
 
-export default Activity1
+export default Wallet(Activity1);

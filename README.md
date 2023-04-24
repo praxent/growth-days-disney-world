@@ -3,6 +3,10 @@ World Information
 
 World Number: 3
 
+Park: Magic Kingdom
+
+Assignee: Vinicius Reis
+
 Park: Epcot
 
 Assignee: Mauricio Saca
