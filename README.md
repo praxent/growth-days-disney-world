@@ -7,6 +7,14 @@ Park: Magic Kingdom
 
 Assignee: William Secchi
 
+Park: Epcot
+
+Assignee: Sory Escobar
+
+Park: Blizzard Beach
+
+Assignee: Alvaro Garcia
+
 Build & Run
 ===========
 
