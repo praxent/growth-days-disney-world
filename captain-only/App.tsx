@@ -25,7 +25,14 @@ import MagicKingdom from ".//MagicKingdom";
 import {default as MagicKingdomActivity1} from "../src/magic-kingdom/activity1/Activity1";
 import {default as MagicKingdomActivity2} from "../src/magic-kingdom/activity2/Activity2";
 import {default as MagicKingdomActivity3} from "../src/magic-kingdom/activity3/Activity3";
+
+import Earth from '../src/epcot/activity3/Earth';
+import Jupiter from '../src/epcot/activity3/Jupiter';
+import Saturn from '../src/epcot/activity3/Saturn';
+import Mars from '../src/epcot/activity3/Mars';
+
 import UserToogle from './UserToggle';
+
 function App() {
 
   return (
@@ -49,6 +56,10 @@ function App() {
         <Route path={CONFIG.ROUTE.EPCOT_A1} element={<EpcotActivity1/>}/>
         <Route path={CONFIG.ROUTE.EPCOT_A2} element={<EpcotActivity2/>}/>
         <Route path={`${CONFIG.ROUTE.EPCOT_A3}/*`} element={<EpcotActivity3/>}/>
+        <Route path={CONFIG.ROUTE.EPCOT_EARTH} element={<Earth />} />
+        <Route path={CONFIG.ROUTE.EPCOT_MARS} element={<Mars />} />
+        <Route path={CONFIG.ROUTE.EPCOT_JUPITER} element={<Jupiter />} />
+        <Route path={CONFIG.ROUTE.EPCOT_SATURN} element={<Saturn />} />
 
         <Route path={CONFIG.ROUTE.MAGIC_KINGDOM} element={<MagicKingdom/>}/>
         <Route path={CONFIG.ROUTE.MAGIC_KINGDOM_A1} element={<MagicKingdomActivity1/>}/>
@@ -56,6 +67,8 @@ function App() {
         <Route path={`${CONFIG.ROUTE.MAGIC_KINGDOM_A3}/*`} element={<MagicKingdomActivity3/>}/>
 
         <Route path={CONFIG.ROUTE.ANY} element={<DisneyWorld/>}/>
+
+
       </Routes>
     </>
   )

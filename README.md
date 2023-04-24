@@ -3,6 +3,10 @@ World Information
 
 World Number: 3
 
+Park: Epcot
+
+Assignee: Mauricio Saca
+
 Park: Blizzard Beach
 
 Assignee: Marcus Seixas
