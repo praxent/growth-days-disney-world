@@ -3,6 +3,10 @@ World Information
 
 World Number: 1
 
+Park: Epcot
+
+Assignee: Cristian Pinto
+
 Park: Blizzard Beach
 
 Assignee: Andres Ospina
