@@ -1,0 +1,14 @@
+
+.animated {
+	position: absolute;
+	width: 20%;
+	animation: 3s linear 0s slide infinite;
+}
+
+@keyframes slide {
+  from { left: 0; }
+  to {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}

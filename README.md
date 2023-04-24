@@ -3,6 +3,10 @@ World Information
 
 World Number: 2
 
+Park: Magic Kingdom
+
+Assignee: Jose Solano
+
 Park: Blizzard Beach
 
 Assignee: Mayra Tovar/Guerth Castro
