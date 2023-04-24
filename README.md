@@ -7,6 +7,10 @@ Park: Epcot
 
 Assignee: Mauricio Saca
 
+Park: Blizzard Beach
+
+Assignee: Marcus Seixas
+
 Build & Run
 ===========
 

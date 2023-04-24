@@ -31,11 +31,14 @@ import Jupiter from '../src/epcot/activity3/Jupiter';
 import Saturn from '../src/epcot/activity3/Saturn';
 import Mars from '../src/epcot/activity3/Mars';
 
+import UserToogle from './UserToggle';
+
 function App() {
 
   return (
     <>
       <Instructions />
+      <UserToogle />
       <Routes>
         <Route path={CONFIG.ROUTE.ROOT} element={<DisneyWorld/>}/>
 
