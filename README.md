@@ -7,6 +7,10 @@ Park: Blizzard Beach
 
 Assignee: Mayra Tovar/Guerth Castro
 
+Park: Animal Kingdom
+
+Assignee: Isabela Lima
+
 Build & Run
 ===========
 
