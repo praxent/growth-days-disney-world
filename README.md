@@ -3,9 +3,9 @@ World Information
 
 World Number: 4
 
-Park:
+Park: Blizzard Beach
 
-Assignee:
+Assignee: Alvaro Garcia
 
 Build & Run
 ===========
