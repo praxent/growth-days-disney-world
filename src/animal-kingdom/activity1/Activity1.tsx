@@ -37,8 +37,6 @@ function Activity1(props) {
         <img className="banner" src={squirtGunGame} />
        
         <Gun shooting={shooting} setShooting={setShooting} counter={counter} decrementCounter={decrementCounter}  />
-        
-        
       </div>
     </Styles>
   )
