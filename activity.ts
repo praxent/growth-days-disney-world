@@ -1,1 +1,1 @@
-export const ACTIVITY = 2;
+export const ACTIVITY = 5;

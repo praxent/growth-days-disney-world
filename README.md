@@ -7,6 +7,10 @@ Park: Epcot
 
 Assignee: Sory Escobar
 
+Park: Blizzard Beach
+
+Assignee: Alvaro Garcia
+
 Build & Run
 ===========
 
