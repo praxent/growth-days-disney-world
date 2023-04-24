@@ -3,6 +3,10 @@ World Information
 
 World Number: 4
 
+Park: Epcot
+
+Assignee: Sory Escobar
+
 Park: Blizzard Beach
 
 Assignee: Alvaro Garcia
