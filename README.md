@@ -3,9 +3,9 @@ World Information
 
 World Number: 3
 
-Park:
+Park: Blizzard Beach
 
-Assignee:
+Assignee: Marcus Seixas
 
 Build & Run
 ===========
