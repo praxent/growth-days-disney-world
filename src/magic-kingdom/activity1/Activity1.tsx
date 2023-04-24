@@ -1,23 +1,193 @@
-import React from 'react';
-import styled from "styled-components";
+import React, {useEffect, useState} from 'react';
+import styled from 'styled-components';
+// @ts-ignore
+import boatImage from './Pirate-Boat-Image.png';
+import withWallet, {WalletProps} from "../wallet";
+
+
+const Title = styled.h1`
+  font-family: 'Harry Potter', cursive;
+  font-size: 48px;
+  color: #F5E5AB;
+  text-shadow: 2px 2px 0px #000;
+  margin: 0;
+  text-align: center;
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+`;
 
 const Styles = styled.div`
-  color: red;
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
+
+  .fullscreen-image {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .boat-image {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    z-index: 1;
+    left: 50%;
+    top: 20%;
+    transform: translate(0%, 60%);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .boat-image {
+      margin-top: 100px;
+      width: 40vw;
+      height: 40vh;
+    }
+  }
+
+  .gif-animation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 500px;
+    z-index: 0;
+  }
+
+  .rain-gif-animation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1000px;
+    z-index: 0;
   }
 `;
 
-function Activity1() {
-  return (
-    <Styles>
-      <div className="container">
-        Hello from Activity 1 Magic Kingdom
-      </div>
-    </Styles>
-  )
+function FullscreenImage() {
+    return (
+        <img
+            className="fullscreen-image"
+            src="https://static.vecteezy.com/system/resources/previews/002/676/689/non_2x/treasure-island-scene-at-daytime-with-pirate-kids-on-the-ship-free-vector.jpg"
+            style={{objectFit: 'fill', width: '100%', height: '100%'}}
+            alt="My pretty image"
+        />
+    );
 }
 
-export default Activity1
+interface BoatProps {
+    position: { x: number; y: number };
+}
+
+function BoatImage({position}: BoatProps) {
+    return (
+        <img
+            className="boat-image"
+            src={boatImage}
+            alt="Boat"
+            style={{
+                left: `${position.x}px`,
+                top: `${position.y}px`,
+                display: 'block',
+            }}
+        />
+    );
+}
+
+function GifAnimation() {
+    return (
+        <img src="https://media.tenor.com/nWx0rD5cDD4AAAAC/ocen.gif" className="gif-animation"/>
+    );
+}
+
+function RainAnimation() {
+    return (
+        <img src="https://i.pinimg.com/originals/3a/43/55/3a4355ca3314170b516c494bdc534dfa.gif"
+             className="rain-gif-animation"/>
+    );
+}
+
+const CenteredButton = styled.button`
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #2196F3;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+// @ts-ignore
+function Activity1({balance, updateBalance}: WalletProps) {
+    const [boatPosition, setBoatPosition] = useState({x: -100, y: 100});
+    const [riding, setRiding] = useState(false);
+
+    useEffect(() => {
+        let intervalId: NodeJS.Timeout;
+
+        if (riding) {
+            intervalId = setInterval(() => {
+                setBoatPosition(prevPosition => ({
+                    x: prevPosition.x + 5,
+                    y: prevPosition.y,
+                }));
+
+
+                if (boatPosition.x > window.innerWidth) {
+                    stopAnimation();
+                }
+
+            }, 30);
+        }
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, [riding, boatPosition]);
+
+    const startAnimation = () => {
+        if (balance < 1) {
+            alert('Ooopps, looks like you spend all of your coins already! You cannot ride without paying!');
+            return;
+        }
+        updateBalance(balance - 1);
+        setRiding(false);
+        setBoatPosition({x: -100, y: 100});
+        setRiding(true);
+    };
+
+    const stopAnimation = () => {
+        setRiding(false);
+        setBoatPosition({x: -100, y: 100});
+    };
+
+    return (
+        <Styles>
+            <div className="fullscreen-image">
+                {riding ? null : <TextContainer>
+                    <Title>Coins {balance}</Title>
+                </TextContainer>}
+                {riding ? null : <FullscreenImage/>}
+                {riding ? <RainAnimation/> : null}
+                {riding ? <BoatImage position={boatPosition}/> : null}
+                {riding ? <GifAnimation/> : null}
+                {riding ? null : <CenteredButton onClick={startAnimation}>Raise Sails</CenteredButton>}
+            </div>
+        </Styles>
+    );
+}
+
+export default withWallet(Activity1);

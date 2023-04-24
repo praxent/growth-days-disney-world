@@ -3,6 +3,10 @@ World Information
 
 World Number: 4
 
+Park: Magic Kingdom
+
+Assignee: William Secchi
+
 Park: Epcot
 
 Assignee: Sory Escobar
